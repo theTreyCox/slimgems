@@ -32,10 +32,11 @@
   }
 
   if (!isset($accessToken)) {
-    echo '<p> Isset Not Logged In!</p>'
+    echo '<p> Isset Not Logged In!</p>';
   } else {
-    echo '<p> Isset Successfully Logged In!</p>'
+    echo '<p> Isset Successfully Logged In!</p>';
   }
+  
  ?>
     <script src="site.js"></script>
 </body>
