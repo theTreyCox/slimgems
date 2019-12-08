@@ -3,7 +3,7 @@
   //e9c0996dd812cdf2ff3f
 
   if ($code == "") {
-    header('Location: https://www.illustratemyalbumcover.com/slimgems');
+    header('Location: https://www.illustratemyalbumcover.com/slimgemz');
     exit;
   }
 
@@ -26,6 +26,15 @@
   curl_close($ch);
 
   $data = json_decode($response);
+
+  if ($data->access_token != "") {
+    session_start();
+    $_SESSION['my_access_token_accessToken'] = $data->access_token;
+    header('Location: https://www.illustratemyalbumcover.com/slimgemz');
+    exit;
+  }
+
   echo '<br/>';
-  var_dump($data);
+  echo $data->error_description;
+  // var_dump($data);
  ?>
