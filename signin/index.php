@@ -30,9 +30,9 @@
 
     $httpHeaderArray = array(
       'Accept: application/json',
-      "'Authorization: token ' . $accessToken",
+      'Authorization: token ' . $accessToken,
       'User-Agent: Demo',
-    )
+    );
 
     // print the auth header to the page
     echo $authHeader . '<br />';
