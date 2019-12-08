@@ -16,7 +16,7 @@
 <h1>SLIM GƎMZ</h1>
 <?php
   echo '<p>Access Token:</p>';
-  echo '<p><code> . $accessToken . </code></p>';
+  echo '<p><code>' . $accessToken . '</code></p>';
   echo '<br />';
   if ($accessToken != "") {
     echo '<p>Logged in!</p>';
