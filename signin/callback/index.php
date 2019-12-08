@@ -19,6 +19,7 @@
   // GITHUB CLIENT SECRET
   // $CLIENT_SECRET = "9275b6e34d091e5a41467e8c7ff3a9f9f2f7e5d4";
   $CLIENT_SECRET = "d67ef826dc7b468eb558019e145a80de";
+  $REDIRECT_URI = "https://illustratemyalbumcover.com/slimgemz/signin/callback";
   // endpoint to get access_token from service
   // GITHUB TOKEN URL
   // $URL = "https://github.com/login/oauth/access_token";
@@ -28,7 +29,9 @@
   $postParams = array(
     'client_id' => $CLIENT_ID,
     'client_secret' => $CLIENT_SECRET,
-    'code' => $code
+    'code' => $code,
+    'grant_type' => 'authorization_code',
+    'redirect_uri' => $REDIRECT_URI,
   );
 
   $httpPostHeaders = array(
