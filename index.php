@@ -1,5 +1,7 @@
 <?php
+  // start session
   session_start();
+  // access token for current session
   $accessToken = $_SESSION['my_access_token_accessToken'];
  ?>
 
@@ -18,10 +20,11 @@
   echo '<p>Access Token:</p>';
   echo '<p><code>' . $accessToken . '</code></p>';
   echo '<br />';
+  // if access is successful do this
   if ($accessToken != "") {
     echo '<p>Logged in!</p>';
   } else {
-    // not logged in
+    // if access is not successful, do this
     echo '<p><a href="https://github.com/login/oauth/authorize?client_id=61fd6c2fbcbfe4f080b8">Sign in with GitHub</a></p>';
   }
  ?>
