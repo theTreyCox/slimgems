@@ -28,14 +28,12 @@
     // $authHeader = "Authorization: token " . $accessToken;
     // $userAgentHeader = "User-Agent: Demo";
 
+    // headers for GET request
     $httpHeaderArray = array(
       'Accept: application/json',
       'Authorization: token ' . $accessToken,
       'User-Agent: Demo',
     );
-
-    // print the auth header to the page
-    echo $authHeader . '<br />';
 
     // use curl to GET response after authentication
     $ch = curl_init();

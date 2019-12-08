@@ -19,17 +19,22 @@
   $URL = "https://github.com/login/oauth/access_token";
 
   // parameters to include in curl POST requests to service
-  $postParams = [
+  $postParams = array(
     'client_id' => $CLIENT_ID,
     'client_secret' => $CLIENT_SECRET,
     'code' => $code
-  ];
+  );
+
+  $httpPostHeaders = array(
+    'Accept: application/json',
+  );
+
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL, $URL);
   curl_setopt($ch, CURLOPT_POST, 1);
   curl_setopt($ch, CURLOPT_POSTFIELDS, $postParams);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-  curl_setopt($ch, CURLOPT_HTTPHEADER,array('Accept: application/json'));
+  curl_setopt($ch, CURLOPT_HTTPHEADER, $httpPostHeaders);
   $response = curl_exec($ch);
   curl_close($ch);
 
