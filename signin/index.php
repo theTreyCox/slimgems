@@ -23,7 +23,9 @@
     }
 
     // url for GET request after authenticated
-    $URL = "https://api.github.com/user";
+    //GITHUB URL
+    // $URL = "https://api.github.com/user";
+    $URL = "https://api.spotify.com/v1/me";
     // headers to include
     // $authHeader = "Authorization: token " . $accessToken;
     // $userAgentHeader = "User-Agent: Demo";
@@ -31,7 +33,7 @@
     // headers for GET request
     $httpHeaderArray = array(
       'Accept: application/json',
-      'Authorization: token ' . $accessToken,
+      'Authorization: Bearer ' . $accessToken,
       'User-Agent: Demo',
     );
 

@@ -12,11 +12,17 @@
   }
 
   // client id from service
-  $CLIENT_ID = "61fd6c2fbcbfe4f080b8";
+  // GITHUB CLIENT ID
+  // $CLIENT_ID = "61fd6c2fbcbfe4f080b8";
+  $CLIENT_ID = "be5ee3a4215c4df69d8149f599c5134a";
   // client secret from service
-  $CLIENT_SECRET = "9275b6e34d091e5a41467e8c7ff3a9f9f2f7e5d4";
+  // GITHUB CLIENT SECRET
+  // $CLIENT_SECRET = "9275b6e34d091e5a41467e8c7ff3a9f9f2f7e5d4";
+  $CLIENT_SECRET = "d67ef826dc7b468eb558019e145a80de";
   // endpoint to get access_token from service
-  $URL = "https://github.com/login/oauth/access_token";
+  // GITHUB TOKEN URL
+  // $URL = "https://github.com/login/oauth/access_token";
+  $URL = "https://accounts.spotify.com/api/token";
 
   // parameters to include in curl POST requests to service
   $postParams = array(
