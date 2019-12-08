@@ -34,6 +34,9 @@
     curl_close($ch);
 
     $data = json_decode($response);
+
+    echo json_encode($data);
+
      ?>
   </body>
 </html>
