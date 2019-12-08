@@ -33,7 +33,7 @@
     // if access is not successful, do this
     //GITHUB
     // echo '<p><a href="https://github.com/login/oauth/authorize?client_id=61fd6c2fbcbfe4f080b8">Sign in with GitHub</a></p>';
-    echo '<p><a href="https://accounts.spotify.com/authorize?client_id=be5ee3a4215c4df69d8149f599c5134a&response_type=code&redirect_uri=https:%2F%2Fillustratemyalbumcover.com%2Fslimgemz%2Fsignin%2Fcallback&scope=user">Sign in to Spotify</a></p>';
+    echo '<p><a href="https://accounts.spotify.com/authorize?client_id=be5ee3a4215c4df69d8149f599c5134a&response_type=code&redirect_uri=https:%2F%2Fillustratemyalbumcover.com%2Fslimgemz%2Fsignin%2Fcallback&scope=user">Sign in to Spotify</a></p>'; 
   }
 
   // perhaps the preferred way to check is using isset
