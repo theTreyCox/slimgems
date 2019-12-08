@@ -1,7 +1,4 @@
-<?php
-  session_start();
-  $accessToken = $_SESSION['my_access_token_accessToken'];
- ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +8,10 @@
     <title>SLIM GƎMZ</title>
 </head>
 <body>
+  <?php
+    session_start();
+    $accessToken = $_SESSION['my_access_token_accessToken'];
+   ?>
 <h1>SLIM GƎMZ</h1>
 <?php
   echo '<p>Access Token:</p>';
