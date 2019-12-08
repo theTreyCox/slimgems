@@ -8,10 +8,6 @@
     <title>SLIM GƎMZ</title>
 </head>
 <body>
-  <?php
-      echo "<p>This is coming from PHP...</p>";
-      echo "<p>Test</p>";
-   ?>
 <h1>SLIM GƎMZ</h1>
     <script src="site.js"></script>
 </body>
