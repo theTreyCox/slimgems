@@ -31,12 +31,13 @@
     echo '<p><a href="https://github.com/login/oauth/authorize?client_id=61fd6c2fbcbfe4f080b8">Sign in with GitHub</a></p>';
   }
 
+  // perhaps the preferred way to check is using isset
   if (!isset($accessToken)) {
-    echo '<p> Isset Not Logged In!</p>';
+    echo '<p><a href="https://github.com/login/oauth/authorize?client_id=61fd6c2fbcbfe4f080b8">Sign in with GitHub</a></p>';
   } else {
     echo '<p> Isset Successfully Logged In!</p>';
   }
-  
+
  ?>
     <script src="site.js"></script>
 </body>
