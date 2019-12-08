@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
     <title>SLIM GƎMZ</title>
-    <p>Test</p>
 </head>
 <body>
+  <?php
+      echo "<p>This is coming from PHP...</p>";
+      echo "<p>Test</p>";
+   ?>
 <h1>SLIM GƎMZ</h1>
     <script src="site.js"></script>
 </body>
