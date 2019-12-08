@@ -19,23 +19,29 @@
 
     // if access token is invalid
     if ($accessToken == "") {
-      die(error('Eoor: Invalid access token'));
+      die(error('Error: Invalid access token'));
     }
 
     // url for GET request after authenticated
     $URL = "https://api.github.com/user";
     // headers to include
-    $authHeader = "Authorization: token " . $accessToken;
-    $userAgentHeader = "User-Agent: Demo";
+    // $authHeader = "Authorization: token " . $accessToken;
+    // $userAgentHeader = "User-Agent: Demo";
+
+    $httpHeaderArray = array(
+      'Accept: application/json',
+      'Authorization: token ' . $accessToken,
+      'User-Agent: Demo',
+    )
 
     // print the auth header to the page
     echo $authHeader . '<br />';
 
-    // use curl to get response after authentication
+    // use curl to GET response after authentication
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $URL);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_HTTPHEADER,array('Accept: application/json', $authHeader, $userAgentHeader));
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $httpHeaderArray);
     $response = curl_exec($ch);
     curl_close($ch);
 
