@@ -21,7 +21,7 @@
     }
 
     $URL = "https://api.github.com/user";
-    $authHeader = "Authorization: token" . $accessToken;
+    $authHeader = "Authorization: token " . $accessToken;
     $userAgentHeader = "User-Agent: Demo";
 
     echo $authHeader . '<br />';
