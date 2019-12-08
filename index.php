@@ -1,11 +1,3 @@
-<?php
-  // start session
-  // add session_start() to each php page of the website that needs to access the $_SESSION variable
-  session_start();
-  // access token for current session
-  $accessToken = $_SESSION['my_access_token_accessToken'];
- ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,36 +8,30 @@
     <title>SLIM GƎMZ</title>
 </head>
 <body>
+<div class="page-container">
+  <div class="background-shelf">
+    <div class="platform-choice-area">
+      <div class="apple-music"></div>
+      <div class="spotify"></div>
+      <div class="youtube"></div>
+    </div>
+    <div class="albums-container">
+      <div class="album1 album infinite"></div>
+      <div class="album2 album sslp"></div>
+      <div class="album3 album mmlp"></div>
+      <div class="album4 album tes"></div>
+      <div class="album5 album encore"></div>
+      <div class="album6 album relpase"></div>
+      <div class="album7 album recovery"></div>
+      <div class="album8 album mmlp2"></div>
+      <div class="album9 album revival"></div>
+      <div class="album10 album kamikaze"></div>
+    </div>
+  </div>
+</div>
 
-<h1>SLIM GƎMZ</h1>
 
-<?php
 
-  $SPOTIFY_CLIENT_ID = 'be5ee3a4215c4df69d8149f599c5134a';
-
-  echo '<p>Access Token:</p>';
-  echo '<p><code>' . $accessToken . '</code></p>';
-  echo '<br />';
-  // if access is successful do this
-  if ($accessToken != "") {
-    echo '<p>Logged in to Spotify!</p>';
-  } else {
-    // if access is not successful, do this
-    //GITHUB
-    // echo '<p><a href="https://github.com/login/oauth/authorize?client_id=61fd6c2fbcbfe4f080b8">Sign in with GitHub</a></p>';
-    echo '<p><a href="https://accounts.spotify.com/authorize?client_id=be5ee3a4215c4df69d8149f599c5134a&response_type=code&redirect_uri=https%3A%2F%2Fillustratemyalbumcover.com%2Fsignin%2Fcallback%2F&scope=user-read-private%20user-read-email">Sign in to Spotify</a></p>';
-  }
-
-  // perhaps the preferred way to check is using isset
-  if (!isset($accessToken)) {
-    // GITHUB
-    // echo '<p><a href="https://github.com/login/oauth/authorize?client_id=61fd6c2fbcbfe4f080b8">Sign in with GitHub</a></p>';
-    echo '<p><a href="https://accounts.spotify.com/authorize?client_id=be5ee3a4215c4df69d8149f599c5134a&response_type=code&redirect_uri=https%3A%2F%2Fillustratemyalbumcover.com%2Fsignin%2Fcallback%2F&scope=user-read-private%20user-read-email"Sign in to Spotify</a></p>';
-  } else {
-    echo '<p> Isset Successfully Logged In to Spotify!</p>';
-  }
-
- ?>
-    <script src="site.js"></script>
-</body>
+<script type="text/javascript" src="site.js"></script>
+  </body>
 </html>
