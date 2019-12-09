@@ -15,22 +15,31 @@ for (i = 1; i < 11; i++) {
     cover.style.pointerEvents = 'none';
     // run show album cover on button click function
     let albumBtn = document.querySelectorAll(`.album-btn-${i}`);
-    showAlbumCoverOnAlbumBtnClick(albumBtn, cover);
+    showAlbumCoverOnAlbumBtnClick(albumBtn, cover, i);
   });
 }
 
+let albumBtn10 = document.querySelector('.album-btn.e10');
+albumBtn10.addEventListener('click', function(e){
+	console.log(e.target.parentElement.classList);
+
+})
+
+
 // function for showing or hiding album cover on album button click
-function showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover) {
+function showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover, i) {
   albumBtn.forEach(function(btn) {
-    btn.addEventListener('click', function(_) {
-      showHideElement(albumCover);
+    btn.addEventListener('click', function(e) {
+      if (e.target.parentElement.classList.contains(`e${i}`)) {
+        showHideElement(albumCover, i);
+      }
     });
   });
 }
 
 // function for showing and hiding an element via opacity
-function showHideElement(element) {
-  if (element.style.opacity = '0') {
+function showHideElement(element, i) {
+  if (element.style.opacity = '0' && element.classList.contains(`e${i}`)) {
     element.style.opacity = '1';
     element.style.pointerEvents = 'all';
   } else {
