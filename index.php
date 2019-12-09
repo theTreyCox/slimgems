@@ -18,8 +18,8 @@
       <div class="youtube"></div>
     </div>
     <div class="album-buttons">
-      <div class="album-btn-1">Infinite</div>
-      <div class="album-btn-2">SSLP</div>
+      <div class="album-btn-1"><p>Infinite</p></div>
+      <div class="album-btn-2"><p>SSLP</p></div>
       <div class="album-btn-3">MMLP</div>
       <div class="album-btn-4">TES</div>
       <div class="album-btn-5">Encore</div>
