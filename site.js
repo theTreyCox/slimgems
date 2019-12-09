@@ -26,6 +26,9 @@ function showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover, i) {
       if (e.target.parentElement.classList.contains(`e${i}`)) {
         showHideElement(albumCover, i);
         console.log('ALBUMCOVER: ' + albumCover + 'i: ' + i);
+      } else {
+        albumCover.style.opacity = '0';
+        albumCover.style.pointerEvents = 'none';
       }
     });
   });
@@ -34,6 +37,7 @@ function showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover, i) {
 // function for showing and hiding an element via opacity
 function showHideElement(element, i) {
   if (element.style.opacity == '0' && element.classList.contains(`e${i}`)) {
+
     element.style.opacity = '1';
     element.style.pointerEvents = 'all';
     console.log('style opacity = 1 now and class is e' + i);
