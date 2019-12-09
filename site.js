@@ -38,6 +38,7 @@ function flipAlbumCover() {
                 e.target.style.transform = 'rotateY(0)';
                 e.target.style.transformStyle = 'preserve-3d';
                 e.target.style.transition = 'all 0.3s ease-in-out';
+                e.target.style.backgroundImage = `url('assets/album${i}.png')`;
             });
         });
     }
