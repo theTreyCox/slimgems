@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="spotify-wrapper.umd.min.js"></script>
     <title>SLIM GƎMZ</title>
 </head>
 
