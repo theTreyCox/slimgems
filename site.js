@@ -137,9 +137,6 @@ function closeAlbum() {
         this.style.pointerEvents = 'none';
         this.classList.remove('animated', 'rubberBand', 'fast');
         albums.forEach(album => {
-            for (num = 1; num < 11; num++) {
-                flipImageToFront(album, num);
-            }
             album.style.pointerEvents = 'none'
         });
     });
