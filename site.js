@@ -31,20 +31,15 @@ function flipAlbumCover() {
                 e.target.style.transform = 'rotateY(180deg)';
                 e.target.style.transformStyle = 'preserve-3d';
                 e.target.style.transition = 'all 0.3s ease-in-out';
-                window.setTimeout(function() {
-                    e.target.style.backgroundImage = `url('assets/album${i - 1}.png')`;
-                }, 150)
+                e.target.style.backgroundImage = `url('assets/album${i - 1}.png')`;
             });
             album.addEventListener('mouseout', function(e) {
                 console.log(e.target);
                 e.target.style.transform = 'rotateY(0)';
                 e.target.style.transformStyle = 'preserve-3d';
                 e.target.style.transition = 'all 0.3s ease-in-out';
-                window.setTimeout(function() {
-                    e.target.style.backgroundImage = `url('assets/album${i}.png')`;
-                }, 150)
             });
-        })
+        });
     }
 }
 
