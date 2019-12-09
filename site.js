@@ -23,7 +23,7 @@ addCDSpinesToButtons();
 flipAlbumCover();
 
 function flipAlbumCover(num) {
-    album = document.querySelectorAll(`album${num}`);
+    album = document.querySelectorAll(`.album${num}`);
     album.forEach(function(album) {
         album.addEventListener('click', function() {
             if (this.style.transform == 'rotateY(180deg)') {
