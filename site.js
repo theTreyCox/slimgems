@@ -131,13 +131,15 @@ function closeAlbum() {
     let closeAlbumBtn = document.querySelector('.close-album-btn');
     let albums = document.querySelectorAll('.album');
     closeAlbumBtn.addEventListener('click', function() {
-        flipAllAlbumCovers();
         albumsContainer.style.opacity = '0';
         albumsContainer.style.pointerEvents = 'none';
         this.style.opacity = '0';
         this.style.pointerEvents = 'none';
         this.classList.remove('animated', 'rubberBand', 'fast');
         albums.forEach(album => {
+            for (num = 1; num < 11; num++) {
+                flipImageToFront(album, num);
+            }
             album.style.pointerEvents = 'none'
         });
     });
