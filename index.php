@@ -18,16 +18,16 @@
       <div class="youtube"></div>
     </div>
     <div class="album-buttons">
-      <div class="album-btn-1"><p>Infinite</p></div>
-      <div class="album-btn-2"><p>SSLP</p></div>
-      <div class="album-btn-3">MMLP</div>
-      <div class="album-btn-4">TES</div>
-      <div class="album-btn-5">Encore</div>
-      <div class="album-btn-6">Relapse</div>
-      <div class="album-btn-7">Recovery</div>
-      <div class="album-btn-8">MMLP2</div>
-      <div class="album-btn-9">Revival</div>
-      <div class="album-btn-10">Kamikaze</div>
+      <div class="album-btn-1"><span>Infinite</span></div>
+      <div class="album-btn-2"><span>SSLP</span></div>
+      <div class="album-btn-3"><span>MMLP</span></div>
+      <div class="album-btn-4"><span>TES</span></div>
+      <div class="album-btn-5"><span>Encore</span></div>
+      <div class="album-btn-6"><span>Relapse</span></div>
+      <div class="album-btn-7"><span>Recovery</span></div>
+      <div class="album-btn-8"><span>MMLP2</span></div>
+      <div class="album-btn-9"><span>Revival</span></div>
+      <div class="album-btn-10"><span>Kamikaze</span></div>
     </div>
     <div class="albums-container">
       <div class="album1 album infinite"></div>
