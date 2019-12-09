@@ -7,3 +7,35 @@
 body {
   font: 18px/1.5 sans-serif;
 }
+
+.page-container {
+	display: block;
+	background: black;
+	height: 100vh;
+}
+
+
+.album {
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+}
+
+.albums-container {
+	width: 500px;
+	height: 500px;
+	display: block;
+	background-color: transparent;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.album1 {
+	background-image: url(assets/album1.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
