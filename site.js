@@ -32,7 +32,7 @@ function flipAlbumCover() {
                 e.target.style.transformStyle = 'preserve-3d';
                 e.target.style.transition = 'all 0.3s ease-in-out';
                 window.setTimeout(function() {
-                    e.target.style.backgroundImage = `url('assets/album${i - 1}')`;
+                    e.target.style.backgroundImage = `url('assets/album${i - 1}.png')`;
                 }, 150)
             });
             album.addEventListener('mouseout', function(e) {
@@ -41,7 +41,7 @@ function flipAlbumCover() {
                 e.target.style.transformStyle = 'preserve-3d';
                 e.target.style.transition = 'all 0.3s ease-in-out';
                 window.setTimeout(function() {
-                    e.target.style.backgroundImage = `url('assets/album${i}')`;
+                    e.target.style.backgroundImage = `url('assets/album${i}.png')`;
                 }, 150)
             });
         })
