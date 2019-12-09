@@ -39,8 +39,8 @@ a {
 }
 
 .albums-container {
-    width: 500px;
-    height: 500px;
+    width: 507.6px;
+    height: 440.1px;
     display: block;
     background-color: transparent;
     position: fixed;
@@ -117,12 +117,14 @@ a {
     background: red;
     width: 30px;
     height: 30px;
-    top: -15px;
+    top: -6px;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 50%;
-    line-height: 32px;
+    line-height: 27px;
     cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    border: 3px solid black;
 }
 
 .close-album-btn {
