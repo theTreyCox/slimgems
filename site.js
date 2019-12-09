@@ -44,6 +44,9 @@ function showHideElement(element, i) {
     element.style.opacity = '1';
     element.style.pointerEvents = 'all';
     element.classList.add('animated', 'pulse', 'faster');
+    setTimeout(function() {
+      element.classList.remove('animated', 'pulse', 'faster');
+    }, 250);
   } else {
     element.style.opacity = '0';
     element.style.pointerEvents = 'none';
