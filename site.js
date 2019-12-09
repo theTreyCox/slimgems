@@ -24,7 +24,7 @@ flipAlbumCover();
 
 function flipAlbumCover() {
     for (i = 1; i < 11; i++) {
-        let albums = document.querySelectorAll(`album${i}`);
+        let albums = document.querySelectorAll(`.album${i}`);
         albums.forEach(function(album) {
             album.addEventListener('mouseover', function(e) {
                 console.log(e.target);
