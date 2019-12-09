@@ -48,3 +48,15 @@ a {
   cursor: pointer;
   color: transparent;
 }
+
+.background-shelf {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.album-buttons {
+	width: 400px;
+	transform: rotate(-90deg) translateX(40px) translateY(100px);
+	transform-origin: bottom;
+  cursor: pointer;
+}
