@@ -47,6 +47,6 @@ function showHideElement(element, i) {
   } else {
     element.style.opacity = '0';
     element.style.pointerEvents = 'none';
-    cl.classList.remove('animated', 'pulse');
+    element.classList.remove('animated', 'pulse');
   }
 }
