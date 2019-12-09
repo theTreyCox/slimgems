@@ -15,7 +15,7 @@ for (i = 1; i < 11; i++) {
     cover.style.pointerEvents = 'none';
     // run show album cover on button click function
     let albumBtn = document.querySelectorAll(`.album-btn-${i}`);
-    showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover);
+    showAlbumCoverOnAlbumBtnClick(albumBtn, cover);
   });
 }
 
