@@ -12,6 +12,7 @@
 
 <body>
 <div class="page-container">
+  <div class="logo"><img src="assets/logo.svg" alt="Slim Gemz logo"></div>
   <div class="background-shelf">
     <div class="platform-choice-area">
       <div class="apple-music"></div>
