@@ -71,6 +71,9 @@ function addCDSpinesToButtons() {
 function showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover, i) {
     albumBtn.forEach(function(btn) {
         btn.addEventListener('click', function(e) {
+            let albumsContainer = document.querySelector('.albums-container');
+            albumsContainer.style.opacity = '1';
+            albumsContainer.style.pointerEvents = 'all';
             if (e.target.parentElement.classList.contains(`e${i}`)) {
                 for (x = 1; x < 11; x++) {
                     let albumCovClasses = document.querySelectorAll(`.album.e${x}`);
@@ -100,6 +103,15 @@ function showHideElement(element, i) {
         element.style.pointerEvents = 'none';
         element.classList.remove('animated', 'pulse', 'faster');
     }
+}
+
+function closeAlbum() {
+    let albumsContainer = document.querySelector('.albums-container');
+    let closeAlbumBtn = document.querySelector('.close-album-btn');
+    closeAlbumBtn.addEventListener('click', function() {
+        albumsContainer.style.opacity = '0';
+        albumsContainer.style.pointerEvents = 'none';
+    });
 }
 
 window.onload = function() {

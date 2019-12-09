@@ -25,6 +25,7 @@
       <div class="album-btn-8 album-btn mmlp2 e8"><span>MMLP2</span></div>
       <div class="album-btn-9 album-btn revival e9"><span>Revival</span></div>
       <div class="album-btn-10 album-btn kamikaze e10"><span>Kamikaze</span></div>
+      <div class="close-album-btn">X</div>
     </div>
     <div class="albums-container page-loading">
       <div class="album1 album infinite e1"></div>
