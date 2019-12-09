@@ -107,8 +107,7 @@ a {
 
 .platform-choice-area>div {
     direction: ltr;
-    /* temp */
-    height: 100vh;
+    height: calc(100vh - 50px);
 }
 
 .close-album-btn {
@@ -133,4 +132,19 @@ a {
 
 .apple-music {
     background: #f8f8fa;
+}
+
+.choose-platform {
+    height: 50px !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    display: block;
+    background: #1c1c1c;
+    width: 300px;
+}
+
+.platform-choice-area>div:first-of-type {
+    margin-top: 50px;
 }
