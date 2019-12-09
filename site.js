@@ -22,25 +22,31 @@ for (i = 1; i < 11; i++) {
 addCDSpinesToButtons();
 flipAlbumCover();
 
-function flipAlbumCover() {
-    for (i = 1; i < 10; i++) {
-        let albums = document.querySelectorAll(`.album${i}`);
-        albums.forEach(function(album) {
-            album.addEventListener('mouseover', function() {
-                this.style.transform = 'rotateY(180deg)';
-                this.style.transformStyle = 'preserve-3d';
-                this.style.transition = 'all 0.3s ease-in-out';
-                this.style.backgroundImage = `url('assets/album5.png')`;
-            });
-            album.addEventListener('mouseout', function(e) {
-                console.log(e.target);
-                this.style.transform = 'rotateY(0)';
-                this.style.transformStyle = 'preserve-3d';
-                this.style.transition = 'all 0.3s ease-in-out';
-                this.style.backgroundImage = `url('assets/album${i}.png')`;
-            });
+function flipAlbumCover(num) {
+    album = document.querySelectorAll(`album${num}`);
+    album.forEach(function(album) {
+        album.addEventListener('click', function() {
+            if (this.style.transform == 'rotateY(180deg)') {
+                flipImageToFront(this);
+            } else {
+                flipImageToBack(this);
+            }
         });
-    }
+    });
+}
+
+function flipImageToBack(element) {
+    element.style.transform = 'rotateY(180deg)';
+    element.style.transformStyle = 'preserve-3d';
+    element.style.transition = 'all 0.3s ease-in-out';
+    element.style.backgroundImage = `url('assets/album${num - 1}.png')`;
+}
+
+function flipImageToFront(element) {
+    element.style.transform = 'rotateY(0)';
+    element.style.transformStyle = 'preserve-3d';
+    element.style.transition = 'all 0.3s ease-in-out';
+    element.style.backgroundImage = `url('assets/album${1}.png')`;
 }
 
 // add spine background images to album link buttons
