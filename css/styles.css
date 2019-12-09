@@ -75,3 +75,15 @@ a {
     mask-image: url('../assets/puff.svg');
     mask-size: contain;
 }
+
+.logo img {
+    height: 100px;
+    padding: 1.5em;
+}
+
+.logo {
+    display: block;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}

@@ -14,11 +14,6 @@
 <div class="page-container">
   <div class="logo"><img src="assets/logo.svg" alt="Slim Gemz logo"></div>
   <div class="background-shelf">
-    <div class="platform-choice-area">
-      <div class="apple-music"></div>
-      <div class="spotify"></div>
-      <div class="youtube"></div>
-    </div>
     <div class="album-buttons">
       <div class="album-btn-1 album-btn infinite e1"><span>Infinite</span></div>
       <div class="album-btn-2 album-btn sslp e2"><span>SSLP</span></div>
@@ -44,6 +39,11 @@
       <div class="album10 album kamikaze e10"></div>
     </div>
   </div>
+  <div class="platform-choice-area">
+      <div class="apple-music"></div>
+      <div class="spotify"></div>
+      <div class="youtube"></div>
+    </div>
 </div>
 
 <script type="text/javascript" src="site.js"></script>
