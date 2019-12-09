@@ -51,15 +51,17 @@ function showHideElement(element, i) {
 
 // animate.css function
 function animateCSS(element, animationName, callback) {
-    const node = document.querySelector(element)
-    node.classList.add('animated', animationName)
+    let node = document.querySelectorAll(element)
+    node.forEach(function(nd) {
+      nd.classList.add('animated', animationName)
 
-    function handleAnimationEnd() {
-        node.classList.remove('animated', animationName)
-        node.removeEventListener('animationend', handleAnimationEnd)
+      function handleAnimationEnd() {
+          nd.classList.remove('animated', animationName)
+          nd.removeEventListener('animationend', handleAnimationEnd)
 
-        if (typeof callback === 'function') callback()
-    }
+          if (typeof callback === 'function') callback()
+      }
 
-    node.addEventListener('animationend', handleAnimationEnd)
+      nd.addEventListener('animationend', handleAnimationEnd)
+    })
 }
