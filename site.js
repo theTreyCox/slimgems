@@ -19,6 +19,18 @@ for (i = 1; i < 11; i++) {
   });
 }
 
+addCDSpinesToButtons();
+
+// add spine background images to album link buttons
+function addCDSpinesToButtons() {
+  for (i = 1; i < 11; i++) {
+    let imgBtn = document.querySelectorAll(`.album-btn-${i}`);
+    imgBtn[i].style.backgroundImage = `url('assets/spine${i}.png')`;
+    imgBtn[i].style.backgroundRepeat = 'no-repeat';
+    imgBtn[i].style.backgroundSize = 'contain';
+  }
+}
+
 // function for showing or hiding album cover on album button click
 function showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover, i) {
   albumBtn.forEach(function(btn) {

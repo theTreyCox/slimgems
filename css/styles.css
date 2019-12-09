@@ -41,3 +41,7 @@ a {
 	top: 50%;
 	transform: translateX(-50%) translateY(-50%);
 }
+
+.album-btn {
+  width: 400px;
+}
