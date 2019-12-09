@@ -26,19 +26,18 @@ function flipAlbumCover() {
     for (i = 1; i < 11; i++) {
         let albums = document.querySelectorAll(`.album${i}`);
         albums.forEach(function(album) {
-            album.addEventListener('mouseover', function(e) {
-                console.log(e.target);
-                e.target.style.transform = 'rotateY(180deg)';
-                e.target.style.transformStyle = 'preserve-3d';
-                e.target.style.transition = 'all 0.3s ease-in-out';
-                e.target.style.backgroundImage = `url('assets/album${i - 1}.png')`;
+            album.addEventListener('mouseover', function() {
+                this.style.transform = 'rotateY(180deg)';
+                this.style.transformStyle = 'preserve-3d';
+                this.style.transition = 'all 0.3s ease-in-out';
+                this.style.backgroundImage = `url('assets/album5.png')`;
             });
             album.addEventListener('mouseout', function(e) {
                 console.log(e.target);
-                e.target.style.transform = 'rotateY(0)';
-                e.target.style.transformStyle = 'preserve-3d';
-                e.target.style.transition = 'all 0.3s ease-in-out';
-                e.target.style.backgroundImage = `url('assets/album${i}.png')`;
+                this.style.transform = 'rotateY(0)';
+                this.style.transformStyle = 'preserve-3d';
+                this.style.transition = 'all 0.3s ease-in-out';
+                this.style.backgroundImage = `url('assets/album${i}.png')`;
             });
         });
     }
