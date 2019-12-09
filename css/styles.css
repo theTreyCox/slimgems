@@ -152,3 +152,7 @@ a {
 .album-embed {
     height: 100%;
 }
+
+.album-apple-music-embed {
+    background-color: white;
+}
