@@ -37,8 +37,18 @@ function flipAlbumCover(num) {
     album.forEach(function(album) {
         album.addEventListener('click', function() {
             if (this.style.transform == 'rotateY(180deg)') {
+                let closeAlbumBtn = document.querySelector('.close-album-btn');
+                closeAlbumBtn.classList.add('animated', 'rubberBand', 'fast');
+                setTimeout(function() {
+                    closeAlbumBtn.classList.remove('animated', 'rubberBand', 'fast');
+                }, 600);
                 flipImageToFront(this, num);
             } else {
+                let closeAlbumBtn = document.querySelector('.close-album-btn');
+                closeAlbumBtn.classList.add('animated', 'rubberBand', 'fast');
+                setTimeout(function() {
+                    closeAlbumBtn.classList.remove('animated', 'rubberBand', 'fast');
+                }, 600);
                 flipImageToBack(this, num);
             }
         });
