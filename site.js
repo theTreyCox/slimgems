@@ -82,6 +82,9 @@ function showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover, i) {
             closeAlbumBtn.style.opacity = '1';
             closeAlbumBtn.style.pointerEvents = 'all';
             closeAlbumBtn.classList.add('animated', 'rubberBand', 'fast');
+            setTimeout(function() {
+                closeAlbumBtn.classList.remove('animated', 'rubberBand', 'fast');
+            }, 300);
             if (e.target.parentElement.classList.contains(`e${i}`)) {
                 for (x = 1; x < 11; x++) {
                     let albumCovClasses = document.querySelectorAll(`.album.e${x}`);
