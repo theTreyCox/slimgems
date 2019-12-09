@@ -108,7 +108,7 @@ a {
 .platform-choice-area>div {
     direction: ltr;
     /* temp */
-    /* height: 100vh; */
+    height: 100vh;
 }
 
 .close-album-btn {
