@@ -41,7 +41,9 @@
     </div>
   </div>
   <div class="platform-choice-area">
-      <div class="apple-music"></div>
+      <div class="apple-music">
+      <iframe src="https://embed.music.apple.com/us/playlist/power-off/pl.fcd3abfac1eb489eb8081362c777696a?app=music&amp;itsct=music_box&amp;itscg=30200" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *;" style="width: 100%; max-width: 300px; overflow: hidden; border-radius: 10px; background: transparent none repeat scroll 0% 0%;" height="450px" frameborder="0"></iframe>
+      </div>
       <div class="spotify"></div>
       <div class="youtube"></div>
     </div>
