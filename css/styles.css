@@ -69,9 +69,9 @@ a {
 }
 
 .albums-container.page-loading {
-    background-image: url('assets/album4.png');
+    background-image: url('../assets/album4.png');
     background-color: #960909;
     background-size: contain;
-    mask-image: url('assets/puff.svg');
+    mask-image: url('../assets/puff.svg');
     mask-size: contain;
 }
