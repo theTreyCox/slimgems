@@ -24,7 +24,7 @@ addCDSpinesToButtons();
 // add spine background images to album link buttons
 function addCDSpinesToButtons() {
   for (i = 1; i < 11; i++) {
-    let imgBtn = document.querySelectorAll(`.album-btn-${i}`);
+    let imgBtn = document.querySelectorAll(`.album-btn-${i} > span`);
     imgBtn.forEach(function(btn) {
       btn.style.backgroundImage = `url('assets/spine${i}.png')`;
       btn.style.backgroundRepeat = 'no-repeat';

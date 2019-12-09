@@ -42,6 +42,9 @@ a {
 	transform: translateX(-50%) translateY(-50%);
 }
 
-.album-btn {
+.album-btn > span {
   width: 400px;
+  display: block;
+  cursor: pointer;
+  color: transparent;
 }
