@@ -116,12 +116,14 @@ function showHideElement(element, i) {
 function closeAlbum() {
     let albumsContainer = document.querySelector('.albums-container');
     let closeAlbumBtn = document.querySelector('.close-album-btn');
+    let albums = document.querySelectorAll('.album');
     closeAlbumBtn.addEventListener('click', function() {
         albumsContainer.style.opacity = '0';
         albumsContainer.style.pointerEvents = 'none';
         this.style.opacity = '0';
         this.style.pointerEvents = 'none';
         this.classList.remove('animated', 'pulse', 'fast');
+        albums.forEach(album => album.style.pointerEvents = 'none');
     });
 }
 
