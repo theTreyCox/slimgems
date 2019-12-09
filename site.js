@@ -25,9 +25,11 @@ addCDSpinesToButtons();
 function addCDSpinesToButtons() {
   for (i = 1; i < 11; i++) {
     let imgBtn = document.querySelectorAll(`.album-btn-${i}`);
-    imgBtn[i].style.backgroundImage = `url('assets/spine${i}.png')`;
-    imgBtn[i].style.backgroundRepeat = 'no-repeat';
-    imgBtn[i].style.backgroundSize = 'contain';
+    imgBtn.forEach(function(btn) {
+      btn.style.backgroundImage = `url('assets/spine${i}.png')`;
+      btn.style.backgroundRepeat = 'no-repeat';
+      btn.style.backgroundSize = 'contain';
+    })
   }
 }
 
