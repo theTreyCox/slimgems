@@ -101,3 +101,8 @@ function showHideElement(element, i) {
         element.classList.remove('animated', 'pulse', 'faster');
     }
 }
+
+window.onload = function() {
+    let albumsContainer = document.querySelector('.albums-container');
+    albumsContainer.classList.remove('page-loading');
+};

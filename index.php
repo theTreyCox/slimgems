@@ -30,7 +30,7 @@
       <div class="album-btn-9 album-btn revival e9"><span>Revival</span></div>
       <div class="album-btn-10 album-btn kamikaze e10"><span>Kamikaze</span></div>
     </div>
-    <div class="albums-container">
+    <div class="albums-container page-loading">
       <div class="album1 album infinite e1"></div>
       <div class="album2 album sslp e2"></div>
       <div class="album3 album mmlp e3"></div>
