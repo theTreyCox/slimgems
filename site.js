@@ -42,8 +42,24 @@ function showHideElement(element, i) {
   if (element.style.opacity == '0' && element.classList.contains(`e${i}`)) {
     element.style.opacity = '1';
     element.style.pointerEvents = 'all';
+    animateCSS(element, 'pulse')
   } else {
     element.style.opacity = '0';
     element.style.pointerEvents = 'none';
   }
+}
+
+// animate.css function
+function animateCSS(element, animationName, callback) {
+    const node = document.querySelector(element)
+    node.classList.add('animated', animationName)
+
+    function handleAnimationEnd() {
+        node.classList.remove('animated', animationName)
+        node.removeEventListener('animationend', handleAnimationEnd)
+
+        if (typeof callback === 'function') callback()
+    }
+
+    node.addEventListener('animationend', handleAnimationEnd)
 }
