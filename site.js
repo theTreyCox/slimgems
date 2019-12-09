@@ -24,11 +24,14 @@ function showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover, i) {
   albumBtn.forEach(function(btn) {
     btn.addEventListener('click', function(e) {
       if (e.target.parentElement.classList.contains(`e${i}`)) {
+        for (x = 1; x < 11; x++) {
+          let albumCovClasses = document.querySelectorAll(`.album.e${x}`);
+          albumCovClasses.forEach(function(cl) {
+            cl.style.opacity = '0';
+            cl.style.pointerEvents = 'none';
+          })
+        }
         showHideElement(albumCover, i);
-        console.log('ALBUMCOVER: ' + albumCover + 'i: ' + i);
-      } else {
-        albumCover.style.opacity = '0';
-        albumCover.style.pointerEvents = 'none';
       }
     });
   });
