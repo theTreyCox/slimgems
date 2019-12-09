@@ -76,8 +76,12 @@ function showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover, i) {
     albumBtn.forEach(function(btn) {
         btn.addEventListener('click', function(e) {
             let albumsContainer = document.querySelector('.albums-container');
+            let closeAlbumBtn = document.querySelector('.close-album-btn');
             albumsContainer.style.opacity = '1';
             albumsContainer.style.pointerEvents = 'all';
+            closeAlbumBtn.style.opacity = '1';
+            closeAlbumBtn.style.pointerEvents = 'all';
+            closeAlbumBtn.classList.add('animated', 'pulse', 'fast');
             if (e.target.parentElement.classList.contains(`e${i}`)) {
                 for (x = 1; x < 11; x++) {
                     let albumCovClasses = document.querySelectorAll(`.album.e${x}`);
@@ -115,6 +119,9 @@ function closeAlbum() {
     closeAlbumBtn.addEventListener('click', function() {
         albumsContainer.style.opacity = '0';
         albumsContainer.style.pointerEvents = 'none';
+        this.style.opacity = '0';
+        this.style.pointerEvents = 'none';
+        this.classList.remove('animated', 'pulse', 'fast');
     });
 }
 

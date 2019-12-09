@@ -47,6 +47,7 @@ a {
     left: calc(50% - 150px);
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
 }
 
 .album-btn>span {
@@ -122,4 +123,9 @@ a {
     border-radius: 50%;
     line-height: 32px;
     cursor: pointer;
+}
+
+.close-album-btn {
+    opacity: 0;
+    pointer-events: none;
 }
