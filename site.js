@@ -42,10 +42,8 @@ function showHideElement(element, i) {
   if (element.style.opacity == '0' && element.classList.contains(`e${i}`)) {
     element.style.opacity = '1';
     element.style.pointerEvents = 'all';
-    console.log('style opacity = 1 now and class is e' + i);
   } else {
     element.style.opacity = '0';
     element.style.pointerEvents = 'none';
-    console.log('style opacity = 0 now');
   }
 }
