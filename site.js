@@ -20,33 +20,39 @@ for (i = 1; i < 11; i++) {
 }
 
 addCDSpinesToButtons();
-flipAlbumCover();
+flipAllAlbumCovers();
+
+function flipAllAlbumCovers() {
+    for (i = 1; i < 11; i++) {
+        flipAlbumCover(i);
+    }
+}
 
 function flipAlbumCover(num) {
     let album = document.querySelectorAll(`.album${num}`);
     album.forEach(function(album) {
         album.addEventListener('click', function() {
             if (this.style.transform == 'rotateY(180deg)') {
-                flipImageToFront(this);
+                flipImageToFront(this, num);
             } else {
-                flipImageToBack(this);
+                flipImageToBack(this, num);
             }
         });
     });
 }
 
-function flipImageToBack(element) {
+function flipImageToBack(element, num) {
     element.style.transform = 'rotateY(180deg)';
     element.style.transformStyle = 'preserve-3d';
     element.style.transition = 'all 0.3s ease-in-out';
     element.style.backgroundImage = `url('assets/album${num - 1}.png')`;
 }
 
-function flipImageToFront(element) {
+function flipImageToFront(element, num) {
     element.style.transform = 'rotateY(0)';
     element.style.transformStyle = 'preserve-3d';
     element.style.transition = 'all 0.3s ease-in-out';
-    element.style.backgroundImage = `url('assets/album${1}.png')`;
+    element.style.backgroundImage = `url('assets/album${num}.png')`;
 }
 
 // add spine background images to album link buttons
