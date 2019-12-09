@@ -41,10 +41,3 @@ a {
 	top: 50%;
 	transform: translateX(-50%) translateY(-50%);
 }
-
-.album1 {
-	background-image: url(assets/album1.png);
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-}

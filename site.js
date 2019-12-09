@@ -13,5 +13,28 @@ for (i = 1; i < 11; i++) {
     // make album art transparent by default;
     cover.style.opacity = '0';
     cover.style.pointerEvents = 'none';
+    // run show album cover on button click function
+    let albumBtn = document.querySelectorAll(`.album-btn-${i}`);
+    showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover);
   });
+}
+
+// function for showing or hiding album cover on album button click
+function showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover) {
+  albumBtn.forEach(function(btn) {
+    btn.addEventListener('click', function(_) {
+      showHideElement(albumCover);
+    });
+  });
+}
+
+// function for showing and hiding an element via opacity
+function showHideElement(element) {
+  if (element.style.opacity = '0') {
+    element.style.opacity = '1';
+    element.style.pointerEvents = 'all';
+  } else {
+    element.style.opacity = '0';
+    element.style.pointerEvents = 'none';
+  }
 }
