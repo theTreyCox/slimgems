@@ -19,13 +19,6 @@ for (i = 1; i < 11; i++) {
   });
 }
 
-let albumBtn10 = document.querySelector('.album-btn.e10');
-albumBtn10.addEventListener('click', function(e){
-	console.log(e.target.parentElement.classList);
-
-})
-
-
 // function for showing or hiding album cover on album button click
 function showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover, i) {
   albumBtn.forEach(function(btn) {
