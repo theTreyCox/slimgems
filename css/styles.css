@@ -51,7 +51,7 @@ a {
     display: block;
     background-color: transparent;
     position: fixed;
-    left: calc(50% - 150px);
+    left: calc(50% - 5px);
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     pointer-events: none;
@@ -226,9 +226,9 @@ a {
 /* album color 4 */
 
 .album-apple-music-embed.album-embed.album-color-4 {
-    background: #ffe3ce;
+    background: #f9f9f9;
 }
 
 .apple-music-listen-link.album-color-4 {
-    background-color: #f2a057;
+    background-color: white;
 }
