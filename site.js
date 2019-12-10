@@ -97,6 +97,7 @@ function showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover, i) {
             }, 600);
             if (e.target.parentElement.classList.contains(`e${i}`)) {
                 for (x = 1; x < 11; x++) {
+                    setAppleMusicPlaylistSidebar(x);
                     let albumCovClasses = document.querySelectorAll(`.album.e${x}`);
                     albumCovClasses.forEach(function(cl) {
                         cl.style.opacity = '0';
@@ -139,6 +140,81 @@ function closeAlbum() {
         albums.forEach(album => {
             album.style.pointerEvents = 'none'
         });
+    });
+}
+
+function setAppleMusicPlaylistSidebar(num) {
+    let appleMusiciFrame = document.querySelectorAll('.apple-music-iframe');
+    appleMusiciFrame.forEach(function(iframe) {
+        switch (num) {
+            case 1:
+                iframe.src = '';
+                iframe.parentElement.classList.add('album-color-1');
+                iframe.parentElement.children[1].classList.add('album-color-1');
+                iframe.parentElement.children[1].href = '';
+                break;
+            case 2:
+                iframe.src = '';
+                iframe.parentElement.classList.add('album-color-2');
+                iframe.parentElement.children[1].classList.add('album-color-2');
+                iframe.parentElement.children[1].href = '';
+                break;
+            case 3:
+                iframe.src = '';
+                iframe.parentElement.classList.add('album-color-3');
+                iframe.parentElement.children[1].classList.add('album-color-3');
+                iframe.parentElement.children[1].href = '';
+                break;
+            case 4:
+                iframe.src = '';
+                iframe.parentElement.classList.add('album-color-4');
+                iframe.parentElement.children[1].classList.add('album-color-4');
+                iframe.parentElement.children[1].href = '';
+                break;
+            case 5:
+                iframe.src = '';
+                iframe.parentElement.classList.add('album-color-5');
+                iframe.parentElement.children[1].classList.add('album-color-5');
+                iframe.parentElement.children[1].href = '';
+                break;
+            case 6:
+                iframe.src = '';
+                iframe.parentElement.classList.add('album-color-6');
+                iframe.parentElement.children[1].classList.add('album-color-6');
+                iframe.parentElement.children[1].href = '';
+                break;
+            case 7:
+                iframe.src = '';
+                iframe.parentElement.classList.add('album-color-7');
+                iframe.parentElement.children[1].classList.add('album-color-7');
+                iframe.parentElement.children[1].href = '';
+                break;
+            case 8:
+                iframe.src = '';
+                iframe.parentElement.classList.add('album-color-8');
+                iframe.parentElement.children[1].classList.add('album-color-8');
+                iframe.parentElement.children[1].href = '';
+                break;
+            case 9:
+                iframe.src = '';
+                iframe.parentElement.classList.add('album-color-9');
+                iframe.parentElement.children[1].classList.add('album-color-9');
+                iframe.parentElement.children[1].href = '';
+                break;
+            case 10:
+                iframe.src = 'https://embed.music.apple.com/us/album/kamikaze/1434770366?app=music&amp;itsct=music_box&amp;itscg=30200';
+                iframe.parentElement.classList.add('album-color-10');
+                iframe.parentElement.children[1].classList.add('album-color-10');
+                iframe.parentElement.children[1].href = 'https://geo.music.apple.com/us/album/kamikaze/1434770366?itsct=music_box&itscg=30200';
+                break;
+            default:
+                iframe.src = 'https://embed.music.apple.com/us/album/kamikaze/1434770366?app=music&amp;itsct=music_box&amp;itscg=30200';
+                iframe.parentElement.classList.add('album-color-10');
+                iframe.parentElement.children[1].classList.add('album-color-10');
+                iframe.parentElement.children[1].href = 'https://geo.music.apple.com/us/album/kamikaze/1434770366?itsct=music_box&itscg=30200';
+                break;
+        }
+
     });
 }
 
