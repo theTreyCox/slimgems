@@ -218,10 +218,6 @@ function setAppleMusicPlaylistSidebar(num) {
             }
             break;
     }
-
-
-    break;
-
 }
 
 window.onload = function() {
