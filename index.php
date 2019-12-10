@@ -42,8 +42,9 @@
   </div>
   <div class="platform-choice-area">
       <div class="choose-platform">
-      <div class="apple-music-logo"></div>
-      <div class="spotify-logo"></div>
+        <div class="lock-unlock-playlist">LOCK/UNLOCK</div>
+        <div class="apple-music-logo"></div>
+        <div class="spotify-logo"></div>
       </div>
       <div class="apple-music">
         <div class="album-apple-music-embed album-embed album-color-10">

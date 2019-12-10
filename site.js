@@ -1,10 +1,20 @@
 console.log('Hello from site.js');
 
+var playlistlock = false;
+
 generateCovers();
 addCDSpinesToButtons();
 flipAllAlbumCovers();
 closeAlbum();
 changeThemeOnButtonPress();
+
+function lockUnlockPlaylist() {
+    let lockUnlockBtn = document.querySelector('.lock-unlock-playlist');
+    lockUnlockBtn.onclick = () => {
+        playlistlock = !playlistlock;
+        console.log(playlistlock);
+    }
+}
 
 function generateCovers() {
     for (i = 1; i < 11; i++) {
