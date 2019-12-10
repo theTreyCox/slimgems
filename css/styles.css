@@ -179,3 +179,27 @@ a {
 .album-apple-music-embed>a.album-color-10 {
     background-color: #f0ebdb;
 }
+
+
+/* album color 1 */
+
+.album-apple-music-embed.album-embed.album-color-1 {
+    background-color: white;
+    background-image: linear-gradient(#f1f4ff, #acacac);
+}
+
+.apple-music-listen-link.album-color-1 {
+    background-color: #c4c6cc;
+}
+
+
+/* album color 2 */
+
+.album-apple-music-embed.album-embed.album-color-2 {
+    background-color: #e8e8ff;
+    background-image: linear-gradient(#dbd8ff, #fefeff);
+}
+
+.apple-music-listen-link.album-color-2 {
+    background-color: #f6f6fb;
+}
