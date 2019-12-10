@@ -187,6 +187,16 @@ a {
     background-color: #f0ebdb;
 }
 
+.album-btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s linear;
+}
+
+.album-btn {
+    transition: transform 0.2s linear;
+    transform: none;
+}
+
 
 /* album color 1 */
 
