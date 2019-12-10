@@ -2,6 +2,7 @@ console.log('Hello from site.js');
 
 var playlistlock = false;
 
+lockUnlockPlaylist();
 generateCovers();
 addCDSpinesToButtons();
 flipAllAlbumCovers();
