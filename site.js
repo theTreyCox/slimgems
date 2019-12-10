@@ -161,9 +161,11 @@ function changeThemeOnButtonPress() {
             appleMusicLink.href = 'https://geo.music.apple.com/us/album/infinite-single/1176507476?itsct=music_box&itscg=30200';
             appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-1';
             appleMusicLink.className = 'apple-music-listen-link album-color-1'
-            appleMusiciFrame.classList.remove('zoomInRight')
+            appleMusiciFrame.classList.remove('fadeInRight')
             appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
-            appleMusiciFrame.classList.add('zoomInRight')
+            setTimeout(function() {
+                appleMusiciFrame.classList.add('fadeInRight')
+            }, 600)
             setTimeout(function() {
                 appleMusiciFrame.classList.remove('animated', 'fadeOutRight', 'faster');
             }, 1200)
@@ -178,9 +180,11 @@ function changeThemeOnButtonPress() {
             appleMusicLink.href = 'https://geo.music.apple.com/us/album/the-slim-shady-lp/1440871441?itsct=music_box&itscg=30200';
             appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-2';
             appleMusicLink.className = 'apple-music-listen-link album-color-2'
-            appleMusiciFrame.classList.remove('zoomInRight')
+            appleMusiciFrame.classList.remove('fadeInRight')
             appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
-            appleMusiciFrame.classList.add('zoomInRight')
+            setTimeout(function() {
+                appleMusiciFrame.classList.add('fadeInRight')
+            }, 600)
             setTimeout(function() {
                 appleMusiciFrame.classList.remove('animated', 'fadeOutRight', 'faster');
             }, 1200)
@@ -195,9 +199,11 @@ function changeThemeOnButtonPress() {
             appleMusicLink.href = 'https://embed.music.apple.com/us/album/the-marshall-mathers-lp/1440866782?app=music&amp;itsct=music_box&amp;itscg=30200';
             appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-3';
             appleMusicLink.className = 'apple-music-listen-link album-color-3'
-            appleMusiciFrame.classList.remove('zoomInRight')
+            appleMusiciFrame.classList.remove('fadeInRight')
             appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
-            appleMusiciFrame.classList.add('zoomInRight')
+            setTimeout(function() {
+                appleMusiciFrame.classList.add('fadeInRight')
+            }, 600)
             setTimeout(function() {
                 appleMusiciFrame.classList.remove('animated', 'fadeOutRight', 'faster');
             }, 1200)
@@ -212,9 +218,11 @@ function changeThemeOnButtonPress() {
             appleMusicLink.href = 'https://geo.music.apple.com/us/album/the-eminem-show/1440903530?itsct=music_box&itscg=30200';
             appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-4';
             appleMusicLink.className = 'apple-music-listen-link album-color-4'
-            appleMusiciFrame.classList.remove('zoomInRight')
+            appleMusiciFrame.classList.remove('fadeInRight')
             appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
-            appleMusiciFrame.classList.add('zoomInRight')
+            setTimeout(function() {
+                appleMusiciFrame.classList.add('fadeInRight')
+            }, 600)
             setTimeout(function() {
                 appleMusiciFrame.classList.remove('animated', 'fadeOutRight', 'faster');
             }, 1200)
