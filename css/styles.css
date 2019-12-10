@@ -156,3 +156,26 @@ a {
 .album-apple-music-embed {
     background-color: white;
 }
+
+.album-apple-music-embed>a {
+    background-color: #f8f8fa;
+    border-radius: 0 !important;
+    width: 100% !important;
+    margin-top: -10px;
+}
+
+.album-apple-music-embed>a>img {
+    padding: 1em;
+}
+
+.apple-music-iframe {
+    mix-blend-mode: multiply;
+}
+
+.album-apple-music-embed.album-color-10 {
+    background-color: #f7f2e0;
+}
+
+.album-apple-music-embed>a.album-color-10 {
+    background-color: #f7f2e0;
+}
