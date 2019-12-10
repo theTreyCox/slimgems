@@ -164,11 +164,9 @@ function changeThemeOnButtonPress() {
             appleMusiciFrame.classList.remove('fadeInRight')
             appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
             setTimeout(function() {
+                appleMusiciFrame.classList.remove('fadeOutRight');
                 appleMusiciFrame.classList.add('fadeInRight')
             }, 600)
-            setTimeout(function() {
-                appleMusiciFrame.classList.remove('animated', 'fadeOutRight', 'faster');
-            }, 1200)
         }
     })
 
@@ -183,11 +181,9 @@ function changeThemeOnButtonPress() {
             appleMusiciFrame.classList.remove('fadeInRight')
             appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
             setTimeout(function() {
+                appleMusiciFrame.classList.remove('fadeOutRight');
                 appleMusiciFrame.classList.add('fadeInRight')
             }, 600)
-            setTimeout(function() {
-                appleMusiciFrame.classList.remove('animated', 'fadeOutRight', 'faster');
-            }, 1200)
         }
     })
 
@@ -202,11 +198,9 @@ function changeThemeOnButtonPress() {
             appleMusiciFrame.classList.remove('fadeInRight')
             appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
             setTimeout(function() {
+                appleMusiciFrame.classList.remove('fadeOutRight');
                 appleMusiciFrame.classList.add('fadeInRight')
             }, 600)
-            setTimeout(function() {
-                appleMusiciFrame.classList.remove('animated', 'fadeOutRight', 'faster');
-            }, 1200)
         }
     })
 
@@ -221,11 +215,9 @@ function changeThemeOnButtonPress() {
             appleMusiciFrame.classList.remove('fadeInRight')
             appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
             setTimeout(function() {
+                appleMusiciFrame.classList.remove('fadeOutRight');
                 appleMusiciFrame.classList.add('fadeInRight')
             }, 600)
-            setTimeout(function() {
-                appleMusiciFrame.classList.remove('animated', 'fadeOutRight', 'faster');
-            }, 1200)
         }
     })
 }
