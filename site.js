@@ -146,8 +146,8 @@ function closeAlbum() {
 function setAppleMusicPlaylistSidebar(num) {
     let appleMusicEmbed = document.querySelector(`.album-apple-music-embed`);
     appleMusicEmbed.classList.add(`album-color-${num}`);
-    let appleMusiciFrame = document.querySelector(`.album-apple-music-embed.album-color-${num} .apple-music-iframe`);
-    let appleMusicLink = document.querySelector(`.album-apple-music-embed.album-color-${num} .apple-music-listen-link`);
+    let appleMusiciFrame = document.querySelector(`.apple-music-iframe`);
+    let appleMusicLink = document.querySelector(`.apple-music-listen-link`);
     appleMusicLink.classList.add(`album-cover-${num}`);
 
     switch (num) {
@@ -155,66 +155,110 @@ function setAppleMusicPlaylistSidebar(num) {
             () => {
                 appleMusiciFrame.src = 'https://www.google.com';
                 appleMusicLink.href = 'https://www.google.com';
+                for (i = 1; i < 11; i++) {
+                    appleMusicLink.classList.remove(`album-color-${i}`)
+                }
+                appleMusicLink.classList.add('album-color-1');
             }
             break;
         case 2:
             () => {
                 appleMusiciFrame.src = 'https://www.google.com';
                 appleMusicLink.href = 'https://www.google.com';
+                for (i = 1; i < 11; i++) {
+                    appleMusicLink.classList.remove(`album-color-${i}`)
+                }
+                appleMusicLink.classList.add('album-color-2');
             }
             break;
         case 3:
             () => {
                 appleMusiciFrame.src = 'https://www.google.com';
                 appleMusicLink.href = 'https://www.google.com';
+                for (i = 1; i < 11; i++) {
+                    appleMusicLink.classList.remove(`album-color-${i}`)
+                }
+                appleMusicLink.classList.add('album-color-3');
             }
             break;
         case 4:
             () => {
                 appleMusiciFrame.src = 'https://www.google.com';
                 appleMusicLink.href = 'https://www.google.com';
+                for (i = 1; i < 11; i++) {
+                    appleMusicLink.classList.remove(`album-color-${i}`)
+                }
+                appleMusicLink.classList.add('album-color-4');
             }
             break;
         case 5:
             () => {
                 appleMusiciFrame.src = 'https://www.google.com';
                 appleMusicLink.href = 'https://www.google.com';
+                for (i = 1; i < 11; i++) {
+                    appleMusicLink.classList.remove(`album-color-${i}`)
+                }
+                appleMusicLink.classList.add('album-color-5');
             }
             break;
         case 6:
             () => {
                 appleMusiciFrame.src = 'https://www.google.com';
                 appleMusicLink.href = 'https://www.google.com';
+                for (i = 1; i < 11; i++) {
+                    appleMusicLink.classList.remove(`album-color-${i}`)
+                }
+                appleMusicLink.classList.add('album-color-6');
             }
             break;
         case 7:
             () => {
                 appleMusiciFrame.src = 'https://www.google.com';
                 appleMusicLink.href = 'https://www.google.com';
+                for (i = 1; i < 11; i++) {
+                    appleMusicLink.classList.remove(`album-color-${i}`)
+                }
+                appleMusicLink.classList.add('album-color-7');
             }
             break;
         case 8:
             () => {
                 appleMusiciFrame.src = 'https://www.google.com';
                 appleMusicLink.href = 'https://www.google.com';
+                for (i = 1; i < 11; i++) {
+                    appleMusicLink.classList.remove(`album-color-${i}`)
+                }
+                appleMusicLink.classList.add('album-color-8');
             }
             break;
         case 9:
             () => {
                 appleMusiciFrame.src = 'https://www.google.com';
                 appleMusicLink.href = 'https://www.google.com';
+                for (i = 1; i < 11; i++) {
+                    appleMusicLink.classList.remove(`album-color-${i}`)
+                }
+                appleMusicLink.classList.add('album-color-9');
             }
             break;
         case 10:
             () => {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/kamikaze/1434770366?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/kamikaze/1434770366?itsct=music_box&itscg=30200';
+                for (i = 1; i < 11; i++) {
+                    appleMusicLink.classList.remove(`album-color-${i}`)
+                }
+                appleMusicLink.classList.add('album-color-10');
             }
             break;
         default:
             () => {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/kamikaze/1434770366?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/kamikaze/1434770366?itsct=music_box&itscg=30200';
+                for (i = 1; i < 11; i++) {
+                    appleMusicLink.classList.remove(`album-color-${i}`)
+                }
+                appleMusicLink.classList.add('album-color-10');
             }
             break;
     }
