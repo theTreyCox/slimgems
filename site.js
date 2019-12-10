@@ -162,12 +162,10 @@ function changeThemeOnButtonPress() {
             appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-1';
             appleMusicLink.className = 'apple-music-listen-link album-color-1'
             appleMusiciFrame.classList.remove('zoomInRight')
-            appleMusiciFrame.classList.add('animated', 'zoomOutRight', 'faster');
+            appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
+            appleMusiciFrame.classList.add('zoomInRight')
             setTimeout(function() {
-                appleMusiciFrame.classList.add('zoomInRight')
-            }, 600)
-            setTimeout(function() {
-                appleMusiciFrame.classList.remove('animated', 'zoomOutRight', 'faster');
+                appleMusiciFrame.classList.remove('animated', 'fadeOutRight', 'faster');
             }, 1200)
         }
     })
@@ -181,12 +179,10 @@ function changeThemeOnButtonPress() {
             appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-2';
             appleMusicLink.className = 'apple-music-listen-link album-color-2'
             appleMusiciFrame.classList.remove('zoomInRight')
-            appleMusiciFrame.classList.add('animated', 'zoomOutRight', 'faster');
+            appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
+            appleMusiciFrame.classList.add('zoomInRight')
             setTimeout(function() {
-                appleMusiciFrame.classList.add('zoomInRight')
-            }, 600)
-            setTimeout(function() {
-                appleMusiciFrame.classList.remove('animated', 'zoomOutRight', 'faster');
+                appleMusiciFrame.classList.remove('animated', 'fadeOutRight', 'faster');
             }, 1200)
         }
     })
@@ -200,12 +196,10 @@ function changeThemeOnButtonPress() {
             appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-3';
             appleMusicLink.className = 'apple-music-listen-link album-color-3'
             appleMusiciFrame.classList.remove('zoomInRight')
-            appleMusiciFrame.classList.add('animated', 'zoomOutRight', 'faster');
+            appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
+            appleMusiciFrame.classList.add('zoomInRight')
             setTimeout(function() {
-                appleMusiciFrame.classList.add('zoomInRight')
-            }, 600)
-            setTimeout(function() {
-                appleMusiciFrame.classList.remove('animated', 'zoomOutRight', 'faster');
+                appleMusiciFrame.classList.remove('animated', 'fadeOutRight', 'faster');
             }, 1200)
         }
     })
@@ -219,12 +213,10 @@ function changeThemeOnButtonPress() {
             appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-4';
             appleMusicLink.className = 'apple-music-listen-link album-color-4'
             appleMusiciFrame.classList.remove('zoomInRight')
-            appleMusiciFrame.classList.add('animated', 'zoomOutRight', 'faster');
+            appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
+            appleMusiciFrame.classList.add('zoomInRight')
             setTimeout(function() {
-                appleMusiciFrame.classList.add('zoomInRight')
-            }, 600)
-            setTimeout(function() {
-                appleMusiciFrame.classList.remove('animated', 'zoomOutRight', 'faster');
+                appleMusiciFrame.classList.remove('animated', 'fadeOutRight', 'faster');
             }, 1200)
         }
     })
