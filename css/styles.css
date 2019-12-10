@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 100vh;
+}
+
 body {
     font: 18px/1.5 sans-serif;
     color: #f5f5f5;
@@ -102,7 +109,7 @@ a {
     overflow-y: scroll;
     direction: rtl;
     scrollbar-color: red #1c1c1c;
-    scrollbar-width: thin;
+    scrollbar-width: auto;
 }
 
 .platform-choice-area>div {
@@ -202,4 +209,26 @@ a {
 
 .apple-music-listen-link.album-color-2 {
     background-color: #f6f6fb;
+}
+
+
+/* album color 3 */
+
+.album-apple-music-embed.album-embed.album-color-3 {
+    background-color: #dbcfc5;
+}
+
+.apple-music-listen-link.album-color-3 {
+    background-color: #cab4a9;
+}
+
+
+/* album color 4 */
+
+.album-apple-music-embed.album-embed.album-color-4 {
+    background: #ffe3ce;
+}
+
+.apple-music-listen-link.album-color-4 {
+    background-color: #f2a057;
 }
