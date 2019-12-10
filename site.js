@@ -148,14 +148,23 @@ window.onload = function() {
     albumsContainer.classList.remove('page-loading');
 };
 
-function changeThemeOnButtonPress() {
-    const appleMusiciFrame = document.querySelector('.apple-music-iframe');
-    const appleMusicLink = document.querySelector('.apple-music-listen-link');
-    albumBtn1 = document.querySelectorAll('.album-btn-1');
-    albumBtn1.forEach(function(btn1) {
-        btn1.onclick = () => {
-            appleMusiciFrame.src = 'https://www.google.com';
-            appleMusicLink.href = 'https://www.google.com';
-        }
-    })
+function changeThemeOnButtonPress(num) {
+    for (i = 1; i < 11; i++) {
+        setThemeBtnPressChanges(i);
+    }
+
+    function setThemeBtnPressChanges() {
+        const appleMusicEmbedWrapper = document.querySelector('.album-apple-music-embed');
+        const appleMusiciFrame = document.querySelector('.apple-music-iframe');
+        const appleMusicLink = document.querySelector('.apple-music-listen-link');
+        albumBtn = document.querySelectorAll(`.album-btn-${num}`);
+        albumBtn.forEach(function(btn) {
+            btn.onclick = () => {
+                appleMusiciFrame.src = 'https://www.google.com';
+                appleMusicLink.href = 'https://www.google.com';
+                appleMusicEmbedWrapper.className = `album-apple-music-embed album-embed album-color-${num}`;
+                appleMusicLink.className = `apple-music-listen-link album-color${num}`;
+            }
+        })
+    }
 }
