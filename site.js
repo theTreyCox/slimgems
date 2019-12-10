@@ -144,79 +144,84 @@ function closeAlbum() {
 }
 
 function setAppleMusicPlaylistSidebar(num) {
-    let appleMusicEmbed = document.querySelector('.album-apple-music-embed');
-    let appleMusiciFrame = document.querySelectorAll('.apple-music-iframe');
-    appleMusiciFrame.forEach(function(iframe) {
-        switch (num) {
-            case 1:
-                iframe.src = '';
-                iframe.parentElement.children[1].className = 'apple-music-listen-link album-color-1';
-                iframe.parentElement.children[1].href = '';
-                iframe.parentElement.className = 'album-apple-music-embed album-embed album-color-1';
-                break;
-            case 2:
-                iframe.src = '';
-                iframe.parentElement.children[1].className = 'apple-music-listen-link album-color-2';
-                iframe.parentElement.children[1].href = '';
-                iframe.parentElement.className = 'album-apple-music-embed album-embed album-color-2';
-                break;
-            case 3:
-                iframe.src = '';
-                iframe.parentElement.children[1].className = 'apple-music-listen-link album-color-3';
-                iframe.parentElement.children[1].href = '';
-                iframe.parentElement.className = 'album-apple-music-embed album-embed album-color-3';
-                break;
-            case 4:
-                iframe.src = '';
-                iframe.parentElement.children[1].className = 'apple-music-listen-link album-color-4';
-                iframe.parentElement.children[1].href = '';
-                iframe.parentElement.className = 'album-apple-music-embed album-embed album-color-4';
-                break;
-            case 5:
-                iframe.src = '';
-                iframe.parentElement.children[1].className = 'apple-music-listen-link album-color-5';
-                iframe.parentElement.children[1].href = '';
-                iframe.parentElement.className = 'album-apple-music-embed album-embed album-color-5';
-                break;
-            case 6:
-                iframe.src = '';
-                iframe.parentElement.children[1].className = 'apple-music-listen-link album-color-6';
-                iframe.parentElement.children[1].href = '';
-                iframe.parentElement.className = 'album-apple-music-embed album-embed album-color-6';
-                break;
-            case 7:
-                iframe.src = '';
-                iframe.parentElement.children[1].className = 'apple-music-listen-link album-color-7';
-                iframe.parentElement.children[1].href = '';
-                iframe.parentElement.className = 'album-apple-music-embed album-embed album-color-7';
-                break;
-            case 8:
-                iframe.src = '';
-                iframe.parentElement.children[1].className = 'apple-music-listen-link album-color-8';
-                iframe.parentElement.children[1].href = '';
-                iframe.parentElement.children[1].className = 'album-apple-music-embed album-embed album-color-8';
-                break;
-            case 9:
-                iframe.src = '';
-                iframe.parentElement.children[1].className = 'apple-music-listen-link album-color-9';
-                iframe.parentElement.children[1].href = '';
-                iframe.parentElement.className = 'album-apple-music-embed album-embed album-color-9';
-                break;
-            case 10:
-                iframe.src = 'https://embed.music.apple.com/us/album/kamikaze/1434770366?app=music&amp;itsct=music_box&amp;itscg=30200';
-                iframe.parentElement.children[1].className = 'apple-music-listen-link album-color-10';
-                iframe.parentElement.children[1].href = 'https://geo.music.apple.com/us/album/kamikaze/1434770366?itsct=music_box&itscg=30200';
-                iframe.parentElement.className = 'album-apple-music-embed album-embed album-color-10';
-                break;
-            default:
-                iframe.src = 'https://embed.music.apple.com/us/album/kamikaze/1434770366?app=music&amp;itsct=music_box&amp;itscg=30200';
-                iframe.parentElement.children[1].className = 'apple-music-listen-link album-color-10';
-                iframe.parentElement.children[1].href = 'https://geo.music.apple.com/us/album/kamikaze/1434770366?itsct=music_box&itscg=30200';
-                iframe.parentElement.className = 'album-apple-music-embed album-embed album-color-10';
-                break;
-        }
+    let appleMusicEmbed = document.querySelector(`.album-apple-music-embed`);
+    appleMusicEmbed.classList.add(`album-color-${num}`);
+    let appleMusiciFrame = document.querySelector(`.album-apple-music-embed.album-color-${num} .apple-music-iframe`);
+    let appleMusicLink = document.querySelector(`.album-apple-music-embed.album-color-${num} .apple-music-listen-link`);
+    appleMusicLink.classList.add(`album-cover-${num}`);
 
-    });
+    switch (num) {
+        case 1:
+            () => {
+                appleMusiciFrame.src = 'https://www.google.com';
+                appleMusicLink.href = 'https://www.google.com';
+            }
+            break;
+        case 2:
+            () => {
+                appleMusiciFrame.src = 'https://www.google.com';
+                appleMusicLink.href = 'https://www.google.com';
+            }
+            break;
+        case 3:
+            () => {
+                appleMusiciFrame.src = 'https://www.google.com';
+                appleMusicLink.href = 'https://www.google.com';
+            }
+            break;
+        case 4:
+            () => {
+                appleMusiciFrame.src = 'https://www.google.com';
+                appleMusicLink.href = 'https://www.google.com';
+            }
+            break;
+        case 5:
+            () => {
+                appleMusiciFrame.src = 'https://www.google.com';
+                appleMusicLink.href = 'https://www.google.com';
+            }
+            break;
+        case 6:
+            () => {
+                appleMusiciFrame.src = 'https://www.google.com';
+                appleMusicLink.href = 'https://www.google.com';
+            }
+            break;
+        case 7:
+            () => {
+                appleMusiciFrame.src = 'https://www.google.com';
+                appleMusicLink.href = 'https://www.google.com';
+            }
+            break;
+        case 8:
+            () => {
+                appleMusiciFrame.src = 'https://www.google.com';
+                appleMusicLink.href = 'https://www.google.com';
+            }
+            break;
+        case 9:
+            () => {
+                appleMusiciFrame.src = 'https://www.google.com';
+                appleMusicLink.href = 'https://www.google.com';
+            }
+            break;
+        case 10:
+            () => {
+                appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/kamikaze/1434770366?app=music&amp;itsct=music_box&amp;itscg=30200';
+                appleMusicLink.href = 'https://geo.music.apple.com/us/album/kamikaze/1434770366?itsct=music_box&itscg=30200';
+            }
+            break;
+        default:
+            () => {
+                appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/kamikaze/1434770366?app=music&amp;itsct=music_box&amp;itscg=30200';
+                appleMusicLink.href = 'https://geo.music.apple.com/us/album/kamikaze/1434770366?itsct=music_box&itscg=30200';
+            }
+            break;
+    }
+
+
+    break;
+
 }
 
 window.onload = function() {
