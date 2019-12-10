@@ -168,16 +168,18 @@ function changeThemeOnButtonPress() {
     albumBtn1 = document.querySelectorAll('.album-btn-1');
     albumBtn1.forEach(function(btn) {
         btn.onclick = () => {
-            appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/infinite-single/1176507476?app=music&amp;itsct=music_box&amp;itscg=30200';
-            appleMusicLink.href = 'https://geo.music.apple.com/us/album/infinite-single/1176507476?itsct=music_box&itscg=30200';
-            appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-1';
-            appleMusicLink.className = 'apple-music-listen-link album-color-1'
-            appleMusiciFrame.classList.remove('fadeInRight')
-            appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
-            setTimeout(function() {
-                appleMusiciFrame.classList.remove('fadeOutRight');
-                appleMusiciFrame.classList.add('fadeInRight')
-            }, 600)
+            if (playlistlock == false) {
+                appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/infinite-single/1176507476?app=music&amp;itsct=music_box&amp;itscg=30200';
+                appleMusicLink.href = 'https://geo.music.apple.com/us/album/infinite-single/1176507476?itsct=music_box&itscg=30200';
+                appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-1';
+                appleMusicLink.className = 'apple-music-listen-link album-color-1'
+                appleMusiciFrame.classList.remove('fadeInRight')
+                appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
+                setTimeout(function() {
+                    appleMusiciFrame.classList.remove('fadeOutRight');
+                    appleMusiciFrame.classList.add('fadeInRight')
+                }, 600)
+            }
         }
     })
 
@@ -185,16 +187,18 @@ function changeThemeOnButtonPress() {
     albumBtn2 = document.querySelectorAll('.album-btn-2');
     albumBtn2.forEach(function(btn) {
         btn.onclick = () => {
-            appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/the-slim-shady-lp/1440871441?app=music&amp;itsct=music_box&amp;itscg=30200';
-            appleMusicLink.href = 'https://geo.music.apple.com/us/album/the-slim-shady-lp/1440871441?itsct=music_box&itscg=30200';
-            appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-2';
-            appleMusicLink.className = 'apple-music-listen-link album-color-2'
-            appleMusiciFrame.classList.remove('fadeInRight')
-            appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
-            setTimeout(function() {
-                appleMusiciFrame.classList.remove('fadeOutRight');
-                appleMusiciFrame.classList.add('fadeInRight')
-            }, 600)
+            if (playlistlock == false) {
+                appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/the-slim-shady-lp/1440871441?app=music&amp;itsct=music_box&amp;itscg=30200';
+                appleMusicLink.href = 'https://geo.music.apple.com/us/album/the-slim-shady-lp/1440871441?itsct=music_box&itscg=30200';
+                appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-2';
+                appleMusicLink.className = 'apple-music-listen-link album-color-2'
+                appleMusiciFrame.classList.remove('fadeInRight')
+                appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
+                setTimeout(function() {
+                    appleMusiciFrame.classList.remove('fadeOutRight');
+                    appleMusiciFrame.classList.add('fadeInRight')
+                }, 600)
+            }
         }
     })
 
@@ -202,16 +206,18 @@ function changeThemeOnButtonPress() {
     albumBtn3 = document.querySelectorAll('.album-btn-3');
     albumBtn3.forEach(function(btn) {
         btn.onclick = () => {
-            appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/the-marshall-mathers-lp/1440866782?app=music&amp;itsct=music_box&amp;itscg=30200';
-            appleMusicLink.href = 'https://embed.music.apple.com/us/album/the-marshall-mathers-lp/1440866782?app=music&amp;itsct=music_box&amp;itscg=30200';
-            appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-3';
-            appleMusicLink.className = 'apple-music-listen-link album-color-3'
-            appleMusiciFrame.classList.remove('fadeInRight')
-            appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
-            setTimeout(function() {
-                appleMusiciFrame.classList.remove('fadeOutRight');
-                appleMusiciFrame.classList.add('fadeInRight')
-            }, 600)
+            if (playlistlock == false) {
+                appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/the-marshall-mathers-lp/1440866782?app=music&amp;itsct=music_box&amp;itscg=30200';
+                appleMusicLink.href = 'https://embed.music.apple.com/us/album/the-marshall-mathers-lp/1440866782?app=music&amp;itsct=music_box&amp;itscg=30200';
+                appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-3';
+                appleMusicLink.className = 'apple-music-listen-link album-color-3'
+                appleMusiciFrame.classList.remove('fadeInRight')
+                appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
+                setTimeout(function() {
+                    appleMusiciFrame.classList.remove('fadeOutRight');
+                    appleMusiciFrame.classList.add('fadeInRight')
+                }, 600)
+            }
         }
     })
 
@@ -219,16 +225,18 @@ function changeThemeOnButtonPress() {
     albumBtn4 = document.querySelectorAll('.album-btn-4');
     albumBtn4.forEach(function(btn) {
         btn.onclick = () => {
-            appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/the-eminem-show/1440903530?app=music&amp;itsct=music_box&amp;itscg=30200';
-            appleMusicLink.href = 'https://geo.music.apple.com/us/album/the-eminem-show/1440903530?itsct=music_box&itscg=30200';
-            appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-4';
-            appleMusicLink.className = 'apple-music-listen-link album-color-4'
-            appleMusiciFrame.classList.remove('fadeInRight')
-            appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
-            setTimeout(function() {
-                appleMusiciFrame.classList.remove('fadeOutRight');
-                appleMusiciFrame.classList.add('fadeInRight')
-            }, 600)
+            if (playlistlock == false) {
+                appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/the-eminem-show/1440903530?app=music&amp;itsct=music_box&amp;itscg=30200';
+                appleMusicLink.href = 'https://geo.music.apple.com/us/album/the-eminem-show/1440903530?itsct=music_box&itscg=30200';
+                appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-4';
+                appleMusicLink.className = 'apple-music-listen-link album-color-4'
+                appleMusiciFrame.classList.remove('fadeInRight')
+                appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
+                setTimeout(function() {
+                    appleMusiciFrame.classList.remove('fadeOutRight');
+                    appleMusiciFrame.classList.add('fadeInRight')
+                }, 600)
+            }
         }
     })
 
@@ -236,16 +244,18 @@ function changeThemeOnButtonPress() {
     albumBtn5 = document.querySelectorAll('.album-btn-5');
     albumBtn5.forEach(function(btn) {
         btn.onclick = () => {
-            appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/encore-deluxe-version/1452852431?app=music&amp;itsct=music_box&amp;itscg=30200';
-            appleMusicLink.href = 'https://geo.music.apple.com/us/album/encore-deluxe-version/1452852431?itsct=music_box&itscg=30200';
-            appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-5';
-            appleMusicLink.className = 'apple-music-listen-link album-color-5'
-            appleMusiciFrame.classList.remove('fadeInRight')
-            appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
-            setTimeout(function() {
-                appleMusiciFrame.classList.remove('fadeOutRight');
-                appleMusiciFrame.classList.add('fadeInRight')
-            }, 600)
+            if (playlistlock == false) {
+                appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/encore-deluxe-version/1452852431?app=music&amp;itsct=music_box&amp;itscg=30200';
+                appleMusicLink.href = 'https://geo.music.apple.com/us/album/encore-deluxe-version/1452852431?itsct=music_box&itscg=30200';
+                appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-5';
+                appleMusicLink.className = 'apple-music-listen-link album-color-5'
+                appleMusiciFrame.classList.remove('fadeInRight')
+                appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
+                setTimeout(function() {
+                    appleMusiciFrame.classList.remove('fadeOutRight');
+                    appleMusiciFrame.classList.add('fadeInRight')
+                }, 600)
+            }
         }
     })
 
@@ -253,16 +263,18 @@ function changeThemeOnButtonPress() {
     albumBtn6 = document.querySelectorAll('.album-btn-6');
     albumBtn6.forEach(function(btn) {
         btn.onclick = () => {
-            appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/relapse-deluxe-version/1440558626?app=music&amp;itsct=music_box&amp;itscg=30200';
-            appleMusicLink.href = 'https://geo.music.apple.com/us/album/relapse-deluxe-version/1440558626?itsct=music_box&itscg=30200';
-            appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-6';
-            appleMusicLink.className = 'apple-music-listen-link album-color-6'
-            appleMusiciFrame.classList.remove('fadeInRight')
-            appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
-            setTimeout(function() {
-                appleMusiciFrame.classList.remove('fadeOutRight');
-                appleMusiciFrame.classList.add('fadeInRight')
-            }, 600)
+            if (playlistlock == false) {
+                appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/relapse-deluxe-version/1440558626?app=music&amp;itsct=music_box&amp;itscg=30200';
+                appleMusicLink.href = 'https://geo.music.apple.com/us/album/relapse-deluxe-version/1440558626?itsct=music_box&itscg=30200';
+                appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-6';
+                appleMusicLink.className = 'apple-music-listen-link album-color-6'
+                appleMusiciFrame.classList.remove('fadeInRight')
+                appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
+                setTimeout(function() {
+                    appleMusiciFrame.classList.remove('fadeOutRight');
+                    appleMusiciFrame.classList.add('fadeInRight')
+                }, 600)
+            }
         }
     })
 
@@ -270,16 +282,18 @@ function changeThemeOnButtonPress() {
     albumBtn7 = document.querySelectorAll('.album-btn-7');
     albumBtn7.forEach(function(btn) {
         btn.onclick = () => {
-            appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/recovery-deluxe-edition/1446625834?app=music&amp;itsct=music_box&amp;itscg=30200';
-            appleMusicLink.href = 'https://geo.music.apple.com/us/album/recovery-deluxe-edition/1446625834?itsct=music_box&itscg=30200';
-            appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-7';
-            appleMusicLink.className = 'apple-music-listen-link album-color-7'
-            appleMusiciFrame.classList.remove('fadeInRight')
-            appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
-            setTimeout(function() {
-                appleMusiciFrame.classList.remove('fadeOutRight');
-                appleMusiciFrame.classList.add('fadeInRight')
-            }, 600)
+            if (playlistlock == false) {
+                appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/recovery-deluxe-edition/1446625834?app=music&amp;itsct=music_box&amp;itscg=30200';
+                appleMusicLink.href = 'https://geo.music.apple.com/us/album/recovery-deluxe-edition/1446625834?itsct=music_box&itscg=30200';
+                appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-7';
+                appleMusicLink.className = 'apple-music-listen-link album-color-7'
+                appleMusiciFrame.classList.remove('fadeInRight')
+                appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
+                setTimeout(function() {
+                    appleMusiciFrame.classList.remove('fadeOutRight');
+                    appleMusiciFrame.classList.add('fadeInRight')
+                }, 600)
+            }
         }
     })
 }
