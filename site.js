@@ -148,23 +148,30 @@ window.onload = function() {
     albumsContainer.classList.remove('page-loading');
 };
 
-function changeThemeOnButtonPress(num) {
-    for (i = 1; i < 11; i++) {
-        setThemeBtnPressChanges(i);
-    }
+function changeThemeOnButtonPress() {
+    const appleMusicEmbedWrapper = document.querySelector('.album-apple-music-embed');
+    const appleMusiciFrame = document.querySelector('.apple-music-iframe');
+    const appleMusicLink = document.querySelector('.apple-music-listen-link');
 
-    function setThemeBtnPressChanges() {
-        const appleMusicEmbedWrapper = document.querySelector('.album-apple-music-embed');
-        const appleMusiciFrame = document.querySelector('.apple-music-iframe');
-        const appleMusicLink = document.querySelector('.apple-music-listen-link');
-        albumBtn = document.querySelectorAll(`.album-btn-${num}`);
-        albumBtn.forEach(function(btn) {
-            btn.onclick = () => {
-                appleMusiciFrame.src = 'https://www.google.com';
-                appleMusicLink.href = 'https://www.google.com';
-                appleMusicEmbedWrapper.className = `album-apple-music-embed album-embed album-color-${num}`;
-                appleMusicLink.className = `apple-music-listen-link album-color${num}`;
-            }
-        })
-    }
+    // btn 1
+    albumBtn1 = document.querySelectorAll('.album-btn-1');
+    albumBtn1.forEach(function(btn) {
+        btn.onclick = () => {
+            appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/infinite-single/1176507476?app=music&amp;itsct=music_box&amp;itscg=30200';
+            appleMusicLink.href = 'https://geo.music.apple.com/us/album/infinite-single/1176507476?itsct=music_box&itscg=30200';
+            appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-1';
+            appleMusicLink.className = 'apple-music-listen-link album-color-1'
+        }
+    })
+
+    // btn 2
+    albumBtn2 = document.querySelectorAll('.album-btn-2');
+    albumBtn2.forEach(function(btn) {
+        btn.onclick = () => {
+            appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/the-slim-shady-lp/1440871441?app=music&amp;itsct=music_box&amp;itscg=30200';
+            appleMusicLink.href = 'https://geo.music.apple.com/us/album/the-slim-shady-lp/1440871441?itsct=music_box&itscg=30200';
+            appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-2';
+            appleMusicLink.className = 'apple-music-listen-link album-color-2'
+        }
+    })
 }
