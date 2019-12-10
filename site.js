@@ -85,6 +85,7 @@ function addCDSpinesToButtons() {
 function showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover, i) {
     albumBtn.forEach(function(btn) {
         btn.addEventListener('click', function(e) {
+            setAppleMusicPlaylistSidebar(i);
             let albumsContainer = document.querySelector('.albums-container');
             let closeAlbumBtn = document.querySelector('.close-album-btn');
             albumsContainer.style.opacity = '1';
@@ -97,7 +98,6 @@ function showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover, i) {
             }, 600);
             if (e.target.parentElement.classList.contains(`e${i}`)) {
                 for (x = 1; x < 11; x++) {
-                    setAppleMusicPlaylistSidebar(x);
                     let albumCovClasses = document.querySelectorAll(`.album.e${x}`);
                     albumCovClasses.forEach(function(cl) {
                         cl.style.opacity = '0';
