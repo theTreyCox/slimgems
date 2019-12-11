@@ -24,7 +24,7 @@ function fetchEminemNewsFromNewsAPI() {
         <div class="em-news-feed">
             <a class="article-source-link" target="_blank" href="http://${article.source.name}"><p class="article-source">${article.source.name}</p></a>
             <a class="article-link" target="_blank" href="${article.url}">
-                <img class="article-image" src="${article.urlToImage == null ? "" : article.urlToImage}" alt=""/>
+                <img class="article-image" src="${article.urlToImage == null ? "" : hideImageIfBlank(article.urlToImage)}" alt=""/>
                 <p class="article-title">${article.title}</p>
                 <p class="article-description">${article.description}</p>
             </a>
@@ -35,6 +35,13 @@ function fetchEminemNewsFromNewsAPI() {
        });
     })
     .catch(error => console.error(error))
+}
+
+function hideImageIfBlank(img) {
+    if (img.src =='' || img.src == null) {
+        img.style.display = 'none';
+    }
+    return img;
 }
 
 function getFormattedDate(date) {
