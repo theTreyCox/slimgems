@@ -72,13 +72,6 @@ a {
     left: 0;
 }
 
-.album-buttons {
-    width: 400px;
-    transform: rotate(-90deg) translateX(40px) translateY(100px);
-    transform-origin: bottom;
-    cursor: pointer;
-}
-
 .albums-container.page-loading {
     background-image: url('../assets/album4.png');
     background-color: #960909;
@@ -212,6 +205,16 @@ a {
 	mask-image: url('assets/unlock.svg');
     cursor: pointer;
     mask-size: contain;
+}
+
+.album-buttons {
+	width: 400px;
+	transform: rotate(-90deg) translateX(40px) translateY(100px);
+	transform-origin: bottom;
+	cursor: pointer;
+	position: fixed;
+	bottom: 175px;
+	left: -15px;
 }
 
 
