@@ -38,6 +38,7 @@ function fetchEminemNewsFromNewsAPI() {
        articleImages.forEach(function(img) {
         hideImageIfBlank(img);
        })
+       
     })
     .catch(error => console.error(error))
 }
