@@ -217,6 +217,23 @@ a {
 	left: -15px;
 }
 
+.em-news {
+	width: 292px;
+	height: calc(100vh - 435px);
+	overflow-y: scroll;
+	overflow-x: hidden;
+	scrollbar-color: red transparent;
+	scrollbar-width: thin;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.em-news > .em-news-feed {
+	width: 292px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
 
 /* album color 1 */
 

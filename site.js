@@ -24,7 +24,7 @@ function fetchEminemNewsFromNewsAPI() {
         <div class="em-news-feed">
             <a class="article-source-link" target="_blank" href="http://${article.source.name}"><p class="article-source">${article.source.name}</p></a>
             <a class="article-link" target="_blank" href="${article.url}">
-                <img class="article-image" src="${article.urlToImage}" alt=""/>
+                <img class="article-image" src="${article.urlToImage == null ? "" : article.urlToImage}" alt=""/>
                 <p class="article-description">${article.description}</p>
             </a>
             <p class="article-author">${article.author}</p>
