@@ -242,6 +242,22 @@ a {
 	font-size: 16px;
 }
 
+.article-description {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 1.4;
+	color: #ccc;
+	margin-top: 10px;
+}
+
+.article-author {
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+
+
 /* album color 1 */
 
 .album-apple-music-embed.album-embed.album-color-1 {

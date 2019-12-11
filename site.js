@@ -28,13 +28,21 @@ function fetchEminemNewsFromNewsAPI() {
                 <p class="article-title">${article.title}</p>
                 <p class="article-description">${article.description}</p>
             </a>
-            <p class="article-author">${article.author}</p>
-            <p class="article-date">${article.publishedAt}</p>
+            <p class="article-author">by ${article.author}</p>
+            <p class="article-date">${getFormattedDate(article.publishedAt)}</p>
         </div>
        `)
        });
     })
     .catch(error => console.error(error))
+}
+
+function getFormattedDate(date) {
+    let year = date.getFullYear();
+    let month = (1 + date.getMonth()).toString().padStart(2, '0');
+    let day = date.getDate().toString().padStart(2, '0');
+  
+    return month + '/' + day + '/' + year;
 }
 
 function lockUnlockPlaylist() {
