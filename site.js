@@ -16,6 +16,22 @@ function fetchEminemNewsFromNewsAPI() {
     .then(response => response.json())
     .then(data => {
        console.log(data) 
+       let emNews = document.querySelector('.em-news');
+       let emArticles = data.articles;
+       console.log(emArticles);
+       emArticles.forEach(function(article) {
+        emNews.insertAdjacentHTML('afterbegin', `
+        <div class="em-news-feed">
+            <p class="article-source">${article.source.name}</p>
+            <a class="article-link" target="_blank" href="${article.url}">
+                <img class="article-image" src="${article.urlToImage}" alt="${article.description}"/>
+                <p class="article-description">${article.description}</p>
+            </a>
+            <p class="article-author">${article.author}</p>
+            <p class="article-date">${article.publishedAt}</p>
+        </div>
+       `)
+       });
     })
     .catch(error => console.error(error))
 }
