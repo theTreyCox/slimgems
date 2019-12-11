@@ -97,7 +97,7 @@ a {
     right: 0;
     top: 0;
     bottom: 0;
-    width: 300px;
+    width: 292px;
     background: #0f0f0f;
     overflow-y: scroll;
     direction: rtl;
@@ -142,7 +142,7 @@ a {
     z-index: 99;
     display: block;
     background: #1c1c1c;
-    width: 300px;
+    width: 292px;
 }
 
 .platform-choice-area>div:nth-of-type(2) {
