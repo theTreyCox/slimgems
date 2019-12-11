@@ -71,7 +71,7 @@ function formatDate(date) {
     hours = hours ? hours : 12; // the hour '0' should be '12'
     minutes = minutes < 10 ? '0' + minutes : minutes;
     var strTime = hours + ':' + minutes + ' ' + ampm;
-    return start.getMonth() + 1 + "/" + start.getDate() + "/" + start.getFullYear() + "  " + strTime;
+    return start.getMonth() + 1 + "/" + start.getDate() + "/" + start.getFullYear() + "  " + "•" + " " + strTime;
 }
 
 function lockUnlockPlaylist() {
