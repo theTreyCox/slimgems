@@ -14,6 +14,7 @@ function lockUnlockPlaylist() {
     let lockUnlockBtn = document.querySelector('.lock-unlock-playlist');
     lockUnlockBtn.onclick = () => {
         playlistlock = !playlistlock;
+        lockUnlockSVG();
         console.log(playlistlock);
     }
 }
