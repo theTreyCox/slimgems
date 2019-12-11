@@ -21,7 +21,7 @@ function lockUnlockPlaylist() {
 
 function lockUnlockSVG() {
     let lockUnlockPlaylistIcon = document.querySelector('.lock-unlock-playlist');
-    if (playlistlock) {
+    if (playlistlock == false) {
         lockUnlockPlaylistIcon.style.maskImage = `url('assets/unlock.svg')`;
     } else {
         lockUnlockPlaylistIcon.style.maskImage = `url('assets/lock.svg')`;
