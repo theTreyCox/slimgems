@@ -201,6 +201,19 @@ a {
 	overflow-y: hidden;
 }
 
+.lock-unlock-playlist {
+	color: transparent;
+	height: 30px;
+	width: 30px;
+	display: block;
+	background-color: white;
+	margin-left: 10px;
+	margin-top: 10px;
+	mask-image: url('assets/unlock.svg');
+    cursor: pointer;
+    mask-size: contain;
+}
+
 
 /* album color 1 */
 

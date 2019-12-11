@@ -8,12 +8,22 @@ addCDSpinesToButtons();
 flipAllAlbumCovers();
 closeAlbum();
 changeThemeOnButtonPress();
+lockUnlockSVG();
 
 function lockUnlockPlaylist() {
     let lockUnlockBtn = document.querySelector('.lock-unlock-playlist');
     lockUnlockBtn.onclick = () => {
         playlistlock = !playlistlock;
         console.log(playlistlock);
+    }
+}
+
+function lockUnlockSVG() {
+    let lockUnlockPlaylistIcon = document.querySelector('.lock-unlock-playlist');
+    if (playlistlock != false) {
+        lockUnlockPlaylistIcon.style.maskImage = `url('assets/unlock.svg')`;
+    } else {
+        lockUnlockPlaylistIcon.style.maskImage = `url('assets/lock.svg')`;
     }
 }
 
