@@ -35,6 +35,9 @@ function fetchEminemNewsFromNewsAPI() {
        `)
        });
     })
+    .then(_ => {
+        hideImageIfBlank();
+    })
     .catch(error => console.error(error))
 }
 
