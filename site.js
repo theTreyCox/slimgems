@@ -41,7 +41,7 @@ function fetchEminemNewsFromNewsAPI() {
 function hideImageIfBlank() {
     let articleImage = document.querySelectorAll('.article-image');
     articleImage.forEach(function(image) {
-        if (image.src == null || image.src == 'null' || image.src == null) {
+        if (image.src == '' || image.src == 'null' || image.src == null || image.src == "") {
             image.style.display = 'none';
         }
     });
