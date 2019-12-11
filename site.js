@@ -12,6 +12,8 @@ lockUnlockSVG();
 fetchEminemNewsFromNewsAPI();
 hideImageIfBlank();
 setInterval(function() {
+    let emNews = document.querySelector('.em-news');
+    emNews.innerHTML = "";
     fetchEminemNewsFromNewsAPI();
     hideImageIfBlank();
 }, 120000);
