@@ -256,7 +256,59 @@ a {
 	margin-top: 10px;
 }
 
+.article-link .article-image {
+	width: 100%;
+}
 
+.article-date {
+	float: right;
+	font-size: 12px;
+	margin-top: 10px;
+	font-weight: bold;
+	margin-left: 0;
+}
+
+.article-author {
+	float: left;
+}
+
+.em-news-feed {
+    background-color: #1c1c1c;
+    margin-bottom: 10px;
+}
+
+.article-source-link {
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 11px;
+	display: block;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.article-source-link::after {
+	content: "";
+	display: block;
+	height: 5px;
+	width: 40px;
+	background: red;
+	position: relative;
+	top: 1px;
+	border-radius: 0;
+}
+
+.article-title:hover {
+	opacity: 0.8;
+}
+
+.article-description:hover {
+	opacity: 0.8;
+}
+
+.article-source:hover {
+	opacity: 0.8;
+}
 
 /* album color 1 */
 
