@@ -14,14 +14,14 @@ hideImageIfBlank();
 
 function fetchEminemNewsFromNewsAPI() {
     fetch('https://newsapi.org/v2/everything?q=eminem&from=2019-11-11&sortBy=publishedAt&apiKey=4d647d27782c46d09a78ea57091e5efa')
-    .then(response => response.json())
-    .then(data => {
-       console.log(data) 
-       let emNews = document.querySelector('.em-news');
-       let emArticles = data.articles;
-       console.log(emArticles);
-       emArticles.forEach(function(article) {
-        emNews.insertAdjacentHTML('afterbegin', `
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            let emNews = document.querySelector('.em-news');
+            let emArticles = data.articles;
+            console.log(emArticles);
+            emArticles.forEach(function(article) {
+                emNews.insertAdjacentHTML('beforeend', `
         <div class="em-news-feed">
             <a class="article-source-link" target="_blank" href="http://${article.source.name}"><p class="article-source">${article.source.name}</p></a>
             <a class="article-link" target="_blank" href="${article.url}">
@@ -29,16 +29,16 @@ function fetchEminemNewsFromNewsAPI() {
                 <p class="article-title">${article.title}</p>
                 <p class="article-description">${article.description}</p>
             </a>
-            <p class="article-author">by ${article.author}</p>
-            <p class="article-date">${getFormattedDate(article.publishedAt)}</p>
+            <p class="article-author">by ${article.author == null ? "Ken Kaniff" : article.author}</p>
+            <p class="article-date">${formatDate(article.publishedAt)}</p>
         </div>
        `)
-       });
-    })
-    .then(_ => {
-        hideImageIfBlank();
-    })
-    .catch(error => console.error(error))
+            });
+        })
+        .then(_ => {
+            hideImageIfBlank();
+        })
+        .catch(error => console.error(error))
 }
 
 function hideImageIfBlank() {
@@ -58,8 +58,20 @@ function getFormattedDate(date) {
     let year = start.getFullYear();
     let month = (1 + start.getMonth()).toString().padStart(2, '0');
     let day = start.getDate().toString().padStart(2, '0');
-  
+
     return month + '/' + day + '/' + year;
+}
+
+function formatDate(date) {
+    let start = new Date(date);
+    var hours = start.getHours();
+    var minutes = start.getMinutes();
+    var ampm = hours >= 12 ? 'pm' : 'am';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    return start.getMonth() + 1 + "/" + start.getDate() + "/" + start.getFullYear() + "  " + strTime;
 }
 
 function lockUnlockPlaylist() {
