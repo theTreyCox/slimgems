@@ -38,9 +38,10 @@ function fetchEminemNewsFromNewsAPI() {
 }
 
 function getFormattedDate(date) {
-    let year = date.getFullYear();
-    let month = (1 + date.getMonth()).toString().padStart(2, '0');
-    let day = date.getDate().toString().padStart(2, '0');
+    let start = new Date(date);
+    let year = start.getFullYear();
+    let month = (1 + start.getMonth()).toString().padStart(2, '0');
+    let day = start.getDate().toString().padStart(2, '0');
   
     return month + '/' + day + '/' + year;
 }
