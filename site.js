@@ -33,6 +33,7 @@ function fetchEminemNewsFromNewsAPI() {
         </div>
        `)
        });
+
        let articleImages = document.querySelectorAll('.article-image');
        articleImages.forEach(function(img) {
         hideImageIfBlank(img);
@@ -42,10 +43,9 @@ function fetchEminemNewsFromNewsAPI() {
 }
 
 function hideImageIfBlank(img) {
-    if (img.src =='' || img.src == null) {
+    if (img.src == '' || img.src == null) {
         img.style.display = 'none';
     }
-    return img;
 }
 
 
