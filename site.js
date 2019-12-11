@@ -9,6 +9,16 @@ flipAllAlbumCovers();
 closeAlbum();
 changeThemeOnButtonPress();
 lockUnlockSVG();
+fetchEminemNewsFromNewsAPI();
+
+function fetchEminemNewsFromNewsAPI() {
+    fetch('https://newsapi.org/v2/everything?q=eminem&from=2019-11-11&sortBy=publishedAt&apiKey=4d647d27782c46d09a78ea57091e5efa')
+    .then(response => response.json())
+    .then(data => {
+       console.log(data) 
+    })
+    .catch(error => console.error(error))
+}
 
 function lockUnlockPlaylist() {
     let lockUnlockBtn = document.querySelector('.lock-unlock-playlist');
