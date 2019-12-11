@@ -310,6 +310,11 @@ a {
 	opacity: 0.8;
 }
 
+.em-news-feed {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
 /* album color 1 */
 
 .album-apple-music-embed.album-embed.album-color-1 {
