@@ -197,6 +197,10 @@ a {
     transform: none;
 }
 
+.platform-choice-area {
+	overflow-y: hidden;
+}
+
 
 /* album color 1 */
 
