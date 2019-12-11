@@ -78,6 +78,8 @@ a {
     background-size: contain;
     mask-image: url('../assets/puff.svg');
     mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
 }
 
 .logo img {
