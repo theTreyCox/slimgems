@@ -10,6 +10,7 @@ closeAlbum();
 changeThemeOnButtonPress();
 lockUnlockSVG();
 fetchEminemNewsFromNewsAPI();
+hideImageIfBlank();
 
 function fetchEminemNewsFromNewsAPI() {
     fetch('https://newsapi.org/v2/everything?q=eminem&from=2019-11-11&sortBy=publishedAt&apiKey=4d647d27782c46d09a78ea57091e5efa')
@@ -33,20 +34,17 @@ function fetchEminemNewsFromNewsAPI() {
         </div>
        `)
        });
-
-       let articleImages = document.querySelectorAll('.article-image');
-       articleImages.forEach(function(img) {
-        hideImageIfBlank(img);
-       })
-       
     })
     .catch(error => console.error(error))
 }
 
-function hideImageIfBlank(img) {
-    if (img.src == '' || img.src == null) {
-        img.style.display = 'none';
-    }
+function hideImageIfBlank() {
+    let articleImage = document.querySelectorAll('.article-image');
+    articleImage.forEach(function(image) {
+        if (image.src == null || image.src == 'null' || image.src == null) {
+            image.style.display = 'none';
+        }
+    });
 }
 
 
