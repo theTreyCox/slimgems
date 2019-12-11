@@ -45,7 +45,7 @@ function hideImageIfBlank() {
     setTimeout(function() {
         let articleImage = document.querySelectorAll('.article-image');
         articleImage.forEach(function(image) {
-            if (image.src == '' || image.src == 'null' || image.src == null || image.src == "") {
+            if (image.src == '' || image.src == 'null' || image.src == null || image.src == "" || image.src == "https://www.illustratemyalbumcover.com/slimgemz/") {
                 image.style.display = 'none';
             }
         });
