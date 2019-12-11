@@ -11,6 +11,11 @@ changeThemeOnButtonPress();
 lockUnlockSVG();
 fetchEminemNewsFromNewsAPI();
 hideImageIfBlank();
+setInterval(function() {
+    fetchEminemNewsFromNewsAPI();
+    hideImageIfBlank();
+}, 120000);
+
 
 function fetchEminemNewsFromNewsAPI() {
     fetch('https://newsapi.org/v2/everything?q=eminem&from=2019-11-11&sortBy=publishedAt&apiKey=4d647d27782c46d09a78ea57091e5efa')
