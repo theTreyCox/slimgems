@@ -30,7 +30,7 @@ function fetchEminemNewsFromNewsAPI() {
             emArticles.forEach(function(article) {
                 emNews.insertAdjacentHTML('beforeend', `
         <div class="em-news-feed">
-            <a class="article-source-link" target="_blank" href="http://www.${article.source.name.toLowercase()}"><p class="article-source">${article.source.name}</p></a>
+            <a class="article-source-link" target="_blank" href="http://www.${article.source.name}"><p class="article-source">${article.source.name}</p></a>
             <a class="article-link" target="_blank" href="${article.url}">
                 <img class="article-image" src="${article.urlToImage == null ? "" : article.urlToImage}" alt=""/>
                 <p class="article-title">${article.title}</p>
