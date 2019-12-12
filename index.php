@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="resizable/prototype.js"><script>
+    <script type="text/javascript" src="resizable/resizable.js"><script>
     <title>SLIM GƎMZ</title>
 </head>
 
