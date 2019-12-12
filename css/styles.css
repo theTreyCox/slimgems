@@ -318,6 +318,10 @@ a {
     padding-bottom: 1em;
 }
 
+.apple-music-iframe {
+    max-width: 100% !important;
+}
+
 /**************** RESIZER **************/
   
   .resizable .resizers{
@@ -327,34 +331,40 @@ a {
     box-sizing: border-box;
   }
   
-  .resizable .resizers .resizer{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%; /*magic to turn square into circle*/
-    background: white;
-    border: 1px solid #4286f4;
-    position: absolute;
-  }
+  .resizable .resizers .resizer {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: red;
+	border: 2px solid #000;
+	position: absolute;
+}
+
+.platform-choice-area {
+	overflow-y: visible;
+}
   
-  .resizable .resizers .resizer.top-left {
-    left: -5px;
-    top: -5px;
-    cursor: nwse-resize; /*resizer cursor*/
-  }
+.resizable .resizers .resizer.top-left {
+    left: -12px;
+    top: 25px;
+    cursor: ew-resize;
+}
   .resizable .resizers .resizer.top-right {
     right: -5px;
     top: -5px;
     cursor: nesw-resize;
+    display: none;
   }
   .resizable .resizers .resizer.bottom-left {
-    left: -5px;
-    bottom: -5px;
-    cursor: nesw-resize;
-  }
+	left: -12px;
+	bottom: 60px;
+	cursor: ew-resize;
+}
   .resizable .resizers .resizer.bottom-right {
     right: -5px;
     bottom: -5px;
     cursor: nwse-resize;
+    display: none;
   }
   /********** END RESIZER **********/
 

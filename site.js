@@ -209,8 +209,8 @@ function showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover, i) {
 function makeResizableDiv(div) {
     const element = document.querySelector(div);
     const resizers = document.querySelectorAll(div + ' .resizer')
-    const minimum_size = 20;
-    let original_width = 0;
+    const minimum_size = 100;
+    let original_width = 292;
     let original_height = 0;
     let original_x = 0;
     let original_y = 0;
@@ -244,9 +244,9 @@ function makeResizableDiv(div) {
         else if (currentResizer.classList.contains('bottom-left')) {
           const height = original_height + (e.pageY - original_mouse_y)
           const width = original_width - (e.pageX - original_mouse_x)
-          if (height > minimum_size) {
-            element.style.height = height + 'px'
-          }
+        //   if (height > minimum_size) {
+        //     element.style.height = height + 'px'
+        //   }
           if (width > minimum_size) {
             element.style.width = width + 'px'
             element.style.left = original_x + (e.pageX - original_mouse_x) + 'px'
@@ -270,10 +270,10 @@ function makeResizableDiv(div) {
             element.style.width = width + 'px'
             element.style.left = original_x + (e.pageX - original_mouse_x) + 'px'
           }
-          if (height > minimum_size) {
-            element.style.height = height + 'px'
-            element.style.top = original_y + (e.pageY - original_mouse_y) + 'px'
-          }
+        //   if (height > minimum_size) {
+        //     element.style.height = height + 'px'
+        //     element.style.top = original_y + (e.pageY - original_mouse_y) + 'px'
+        //   }
         }
       }
       
