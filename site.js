@@ -209,7 +209,7 @@ function showAlbumCoverOnAlbumBtnClick(albumBtn, albumCover, i) {
 function makeResizableDiv(div) {
     const element = document.querySelector(div);
     const resizers = document.querySelectorAll(div + ' .resizer')
-    const minimum_size = 192;
+    const minimum_size = 100;
     let original_width = 292;
     let original_height = 0;
     let original_x = 0;
