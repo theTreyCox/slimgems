@@ -11,13 +11,8 @@ changeThemeOnButtonPress();
 lockUnlockSVG();
 fetchEminemNewsFromNewsAPI();
 hideImageIfBlank();
-// setInterval(function() {
-//     let emNews = document.querySelector('.em-news');
-//     emNews.innerHTML = "";
-//     fetchEminemNewsFromNewsAPI();
-//     hideImageIfBlank();
-// }, 120000);
 makeResizableDiv('.resizable');
+// add button to press and call reloadNews();
 
 
 function fetchEminemNewsFromNewsAPI() {
@@ -60,6 +55,13 @@ function hideImageIfBlank() {
         });
     }, 1000)
 }
+
+function reloadNews() {
+    let emNews = document.querySelector('.em-news');
+    emNews.innerHTML = "";
+    fetchEminemNewsFromNewsAPI();
+    hideImageIfBlank();
+};
 
 
 function getFormattedDate(date) {
