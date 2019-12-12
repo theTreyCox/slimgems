@@ -55,7 +55,7 @@
         </div>
         <div class="apple-music">
           <div class="album-apple-music-embed album-embed album-color-10">
-            <iframe class="apple-music-iframe" src="https://embed.music.apple.com/us/album/the-marshall-mathers-lp/1440866782?app=music&amp;itsct=music_box&amp;itscg=30200" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *;" style="width: 100%; max-width: 300px; overflow: hidden; border-radius: 10px; background: transparent none repeat scroll 0% 0%;" height="100%" frameborder="0"></iframe>
+            <iframe class="apple-music-iframe" src="https://embed.music.apple.com/us/album/infinite-single/1176507476?app=music&amp;itsct=music_box&amp;itscg=30200" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *;" style="width: 100%; max-width: 300px; overflow: hidden; border-radius: 10px; background: transparent none repeat scroll 0% 0%;" height="100%" frameborder="0"></iframe>
             <a class="apple-music-listen-link album-color-10" href="https://geo.music.apple.com/us/album/kamikaze/1434770366?itsct=music_box&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 300px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-music/standard-black/en-US?size=250x83&amp;releaseDate=1535673600" style="border-radius: 0; width: 100%; height: 83px;"></a>
           </div>
         </div>
