@@ -49,7 +49,7 @@ function fetchEminemNewsFromNewsAPI() {
 }
 
 document.observe('dom:loaded', function(ev) {
-    new Resizable($('.platform-choice-area'));
+    new Resizable($('platform-choice-area'));
 });
 
 function hideImageIfBlank() {

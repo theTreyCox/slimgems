@@ -43,7 +43,7 @@
       <div class="close-album-btn">X</div>
     </div>
   </div>
-  <div class="platform-choice-area">
+  <div class="platform-choice-area" id="platform-choice-area">
       <div class="choose-platform">
         <div class="lock-unlock-playlist">LOCK/UNLOCK</div>
         <div class="apple-music-logo"></div>
