@@ -48,9 +48,7 @@ function fetchEminemNewsFromNewsAPI() {
         .catch(error => console.error(error))
 }
 
-document.observe('dom:loaded', function(ev) {
-    new Resizable($('platform-choice-area'));
-});
+
 
 function hideImageIfBlank() {
     setTimeout(function() {
