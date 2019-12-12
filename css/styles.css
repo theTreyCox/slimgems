@@ -361,9 +361,9 @@ a {
   }
   
   .resizable .resizers .resizer {
-	width: 20px;
-	height: 20px;
-	border-radius: 0;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
 	background: red;
 	border: 2px solid #000;
 	position: absolute;
