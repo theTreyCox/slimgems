@@ -334,6 +334,19 @@ a {
 	width: 100%;
 }
 
+.lock-unlock-playlist {
+	color: transparent;
+	height: 30px;
+	width: 30px;
+	display: block;
+	background-color: white;
+	margin-top: 10px;
+	cursor: pointer;
+	mask-size: contain;
+	float: right;
+	margin-right: 10px;
+}
+
 /**************** RESIZER **************/
   
   .resizable .resizers{
@@ -370,9 +383,11 @@ a {
   }
   .resizable .resizers .resizer.bottom-left {
 	left: -10px;
-	bottom: 50%;
+	bottom: auto;
 	cursor: ew-resize;
 	transform: translateY(-50%);
+	top: 25px;
+	z-index: 99999;
 }
   .resizable .resizers .resizer.bottom-right {
     right: -5px;
