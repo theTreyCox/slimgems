@@ -48,9 +48,6 @@ function fetchEminemNewsFromNewsAPI() {
         .catch(error => console.error(error))
 }
 
-document.observe('dom:loaded', function(ev) {
-    new Resizable($('.platform-choice-area'));
-});
 
 function hideImageIfBlank() {
     setTimeout(function() {
@@ -243,6 +240,8 @@ function closeAlbum() {
 window.onload = function() {
     let albumsContainer = document.querySelector('.albums-container');
     albumsContainer.classList.remove('page-loading');
+
+    new Resizable($('.platform-choice-area'));
 };
 
 function changeThemeOnButtonPress() {
