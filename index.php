@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="resizable/prototype.js"></script>
-    <script type="text/javascript" src="resizable/resizable.js"></script>
     <title>SLIM GƎMZ</title>
 </head>
 
@@ -43,7 +41,13 @@
       <div class="close-album-btn">X</div>
     </div>
   </div>
-  <div class="platform-choice-area" id="platform-choice-area">
+  <div class="platform-choice-area resizable" id="platform-choice-area">
+      <div class='resizers'>
+        <div class='resizer top-left'></div>
+        <div class='resizer top-right'></div>
+        <div class='resizer bottom-left'></div>
+        <div class='resizer bottom-right'></div>
+      </div>
       <div class="choose-platform">
         <div class="lock-unlock-playlist">LOCK/UNLOCK</div>
         <div class="apple-music-logo"></div>
