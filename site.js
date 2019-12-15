@@ -16,7 +16,7 @@ makeResizableDiv('.resizable');
 
 
 function fetchEminemNewsFromNewsAPI() {
-    fetch('https://newsapi.org/v2/everything?q=eminem&sortBy=publishedAt&apiKey=e06ae732db4a4d5ea5f814b0acfe2105')
+    fetch('https://newsapi.org/v2/everything?qInTitle=eminem&sortBy=publishedAt&language=en&apiKey=e06ae732db4a4d5ea5f814b0acfe2105')
         .then(response => response.json())
         .then(data => {
             console.log(data)
