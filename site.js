@@ -280,8 +280,11 @@ function makeResizableDiv(div) {
             }
             let resetSidebarBtn = document.querySelector('.reset-sidebar-width');
             resetSidebarBtn.onclick = () => {
-                element.style.width = '392px';
+                element.style.width = '292px';
+                element.style.right = '0 !important';
             }
+
+            element.style.right = '0 !important';
         }
 
         function stopResize() {
