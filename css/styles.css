@@ -354,12 +354,18 @@ a {
 .reset-sidebar-width {
 	background-image: none;
 	background-size: contain;
-	height: 30px;
-	width: 30px;
-	mask-image: url('assets/reset.svg');
+	height: 25px;
+	width: 25px;
+	mask-image: url('../assets/reset.svg');
 	background-color: white;
 	background-repeat: no-repeat;
 	mask-repeat: no-repeat;
+	position: absolute;
+	mask-position: center;
+	left: 20px;
+	top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 

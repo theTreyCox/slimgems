@@ -278,6 +278,10 @@ function makeResizableDiv(div) {
                 //     element.style.top = original_y + (e.pageY - original_mouse_y) + 'px'
                 //   }
             }
+            let resetSidebarBtn = document.querySelector('.reset-sidebar-width');
+            resetSidebarBtn.onclick = () => {
+                element.style.width = '392px';
+            }
         }
 
         function stopResize() {
