@@ -159,7 +159,7 @@ function flipImageToBack(element, num) {
     element.style.transition = 'all 0.3s ease-in-out';
     setTimeout(function() {
         element.style.backgroundImage = `url('assets/back-album${num}.png')`;
-    }, 250);   
+    }, 125);   
 }
 
 function flipImageToFront(element, num) {
@@ -168,7 +168,7 @@ function flipImageToFront(element, num) {
     element.style.transition = 'all 0.3s ease-in-out';
     setTimeout(function() {
         element.style.backgroundImage = `url('assets/album${num}.png')`;
-    }, 250);
+    }, 125);
 }
 
 // add spine background images to album link buttons
