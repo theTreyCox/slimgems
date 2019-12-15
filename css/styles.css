@@ -351,6 +351,17 @@ a {
     padding-top: 50px;
 }
 
+.reset-sidebar-width {
+	background-image: none;
+	background-size: contain;
+	height: 30px;
+	width: 30px;
+	mask-image: url('assets/reset.svg');
+	background-color: white;
+	background-repeat: no-repeat;
+	mask-repeat: no-repeat;
+}
+
 
 /**************** RESIZER **************/
 

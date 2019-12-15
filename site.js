@@ -157,7 +157,7 @@ function flipImageToBack(element, num) {
     element.style.transform = 'rotateY(180deg)';
     element.style.transformStyle = 'preserve-3d';
     element.style.transition = 'all 0.3s ease-in-out';
-    element.style.backgroundImage = `url('assets/album${num - 1}.png')`;
+    element.style.backgroundImage = `url('assets/back-album${num}.png')`;
 }
 
 function flipImageToFront(element, num) {
