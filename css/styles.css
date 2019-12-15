@@ -351,10 +351,6 @@ a {
     padding-top: 50px;
 }
 
-.platform-choice-area {
-	max-width: calc(100vw - 305px) !important;
-}
-
 
 /**************** RESIZER **************/
 
@@ -568,8 +564,5 @@ a {
     }
     .close-album-btn {
         position: absolute;
-    }
-    .platform-choice-area {
-        max-width: calc(100%) !important;
     }
 }
