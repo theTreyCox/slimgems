@@ -234,6 +234,9 @@ function makeResizableDiv(div) {
             original_mouse_y = e.pageY;
             window.addEventListener('mousemove', resize)
             window.addEventListener('mouseup', stopResize)
+            if (element.style.maxWidth > window.innerWidth - 292) {
+                element.style.left = window.innerWidth - 292 + 'px';
+            }
         })
 
         function resize(e) {
@@ -281,10 +284,13 @@ function makeResizableDiv(div) {
             let resetSidebarBtn = document.querySelector('.reset-sidebar-width');
             resetSidebarBtn.onclick = () => {
                 element.style.width = '292px';
-                element.style.right = '0 !important';
+                element.style.left = window.innerWidth - 292 + 'px';
             }
 
-            element.style.right = '0 !important';
+            element.style.maxWidth = `calc(100vw - 292px)`;
+            if (element.style.maxWidth > window.innerWidth - 292) {
+                element.style.left = window.innerWidth - 292 + 'px';
+            }
         }
 
         function stopResize() {
