@@ -49,6 +49,7 @@
         <div class='resizer bottom-right'></div>
       
         <div class="choose-platform">
+          <div class="reset-sidebar-width"></div>
           <div class="lock-unlock-playlist">LOCK/UNLOCK</div>
           <div class="apple-music-logo"></div>
           <div class="spotify-logo"></div>
