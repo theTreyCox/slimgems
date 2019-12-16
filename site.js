@@ -286,8 +286,9 @@ function makeResizableDiv(div) {
 
             element.style.maxWidth = `calc(100vw - 292px)`;
             element.style.maxHeight = '100vh';
-            if (element.style.maxWidth > window.innerWidth - 292) {
+            if (element.style.width == window.innerWidth - 292) {
                 element.style.left = window.innerWidth - 292 + 'px';
+                element.style.maxHeight = window.innerHeight + 'px !important';
             }
         }
 
@@ -295,6 +296,7 @@ function makeResizableDiv(div) {
             window.removeEventListener('mousemove', resize)
             if (element.style.width == window.innerWidth - 292) {
                 element.style.left = window.innerWidth - 292 + 'px';
+                element.style.maxHeight = window.innerHeight + 'px !important';
             }
         }
     }
