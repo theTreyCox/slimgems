@@ -429,15 +429,20 @@ a {
     left: 0;
     right: 0;
     width: 1920px;
-    z-index: -1;
+    z-index: -2;
     mix-blend-mode: normal;
     object-fit: cover;
     object-position: center;
     transition: all 0.3s ease-in-out;
+    filter: none;
 }
 
 #bg-video.album1-styling {
     mix-blend-mode: hard-light;
+}
+
+#bg-video.album2-styling {
+    filter: contrast(2);
 }
 
 #album-year {
@@ -463,6 +468,22 @@ a {
 
 .albums-container {
     opacity: 0;
+}
+
+#bg-color-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: transparent;
+    mix-blend-mode: normal;
+}
+
+#bg-color-overlay.album2-styling {
+    background: #2f246f;
+    mix-blend-mode: hue;
 }
 
 
