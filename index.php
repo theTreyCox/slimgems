@@ -13,6 +13,7 @@
 <body>
 <div class="page-container album1-styling">
   <div class="logo"><img src="assets/logo.svg" alt="Slim Gemz logo"></div>
+  <div id="album-year"><span>1996</span></div>
   <div class="background-shelf">
     <div class="em-news"></div>
     <div class="album-buttons">
