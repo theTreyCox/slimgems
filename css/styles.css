@@ -368,6 +368,10 @@ a {
     cursor: pointer;
 }
 
+.album {
+    cursor: alias;
+}
+
 
 /**************** RESIZER **************/
 
