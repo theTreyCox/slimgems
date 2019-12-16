@@ -517,10 +517,10 @@ function changeThemeOnButtonPress() {
     // btn 9
     albumBtn9 = document.querySelectorAll('.album-btn-9');
     albumBtn9.forEach(function(btn) {
-        backgroundVideo.className = 'album9-styling';
-        pageContainer.className = 'page-container album9-styling'
-        backgroundVideoSource.src = 'assets/mainbg-album9.mp4';
         btn.onclick = () => {
+            backgroundVideo.className = 'album9-styling';
+            pageContainer.className = 'page-container album9-styling'
+            backgroundVideoSource.src = 'assets/mainbg-album9.mp4';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/revival/1440901083?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/revival/1440901083?itsct=music_box&itscg=30200';
