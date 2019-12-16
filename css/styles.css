@@ -386,6 +386,43 @@ a {
 	background-image: url('../assets/backdrop-album1.png');
 }
 
+.page-container.album2-styling {
+	background-image: url('../assets/backdrop-album2.png');
+}
+
+.page-container.album3-styling {
+	background-image: url('../assets/backdrop-album3.png');
+}
+
+.page-container.album4-styling {
+	background-image: url('../assets/backdrop-album4.png');
+}
+
+.page-container.album5-styling {
+	background-image: url('../assets/backdrop-album5.png');
+}
+
+.page-container.album6-styling {
+	background-image: url('../assets/backdrop-album6.png');
+}
+
+.page-container.album7-styling {
+	background-image: url('../assets/backdrop-album7.png');
+}
+
+.page-container.album8-styling {
+	background-image: url('../assets/backdrop-album8.png');
+}
+
+.page-container.album9-styling {
+	background-image: url('../assets/backdrop-album9.png');
+}
+
+.page-container.album10-styling {
+	background-image: url('../assets/backdrop-album10.png');
+}
+
+
 #bg-video {
 	height: 100vh;
 	position: fixed;
