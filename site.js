@@ -336,7 +336,7 @@ function changeThemeOnButtonPress() {
     const backgroundVideo = document.getElementById('bg-video');
     const backgroundVideoSource = document.querySelector('#bg-video > source');
     const pageContainer = document.querySelector('.page-container');
-    const albumYear = document.querySelector('.album-year > span');
+    const albumYear = document.querySelector('#album-year > span');
     const albumYearWrapper = document.getElementById('album-year');
 
     // btn 1
