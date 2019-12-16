@@ -378,7 +378,8 @@ a {
 	background-image: none;
 	background-repeat: no-repeat;
 	background-size: 1920px;
-	background-position: bottom;
+    background-position: bottom;
+    transition: all 0.3s ease-in-out;
 }
 
 .page-container.album1-styling {
@@ -395,7 +396,8 @@ a {
 	z-index: -1;
 	mix-blend-mode: normal;
 	object-fit: cover;
-	object-position: center;
+    object-position: center;
+    transition: all 0.3s ease-in-out;
 }
 
 #bg-video.album1-styling {
@@ -406,7 +408,8 @@ a {
 	position: fixed;
 	top: 0;
 	left: 310px;
-	font-size: 5em;
+    font-size: 5em;
+    transition: all 0.3s ease-in-out;
 }
 
 #album-year.album1-styling {
