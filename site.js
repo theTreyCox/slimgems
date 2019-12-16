@@ -338,6 +338,7 @@ function changeThemeOnButtonPress() {
     const pageContainer = document.querySelector('.page-container');
     const albumYear = document.querySelector('#album-year > span');
     const albumYearWrapper = document.getElementById('album-year');
+    const bgOverlay = document.getElementById('bg-color-overlay');
 
     // btn 1
     albumBtn1 = document.querySelectorAll('.album-btn-1');
@@ -354,6 +355,7 @@ function changeThemeOnButtonPress() {
             backgroundVideo.play();
             albumYear.innerText = '1996';
             albumYearWrapper.className = 'album1-styling';
+            bgOverlay.className = 'album1-styling';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/infinite-single/1176507476?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/infinite-single/1176507476?itsct=music_box&itscg=30200';
@@ -383,6 +385,7 @@ function changeThemeOnButtonPress() {
             backgroundVideo.play();
             albumYearWrapper.className = 'album2-styling';
             albumYear.innerText = '1999';
+            bgOverlay.className = 'album2-styling';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/the-slim-shady-lp/1440871441?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/the-slim-shady-lp/1440871441?itsct=music_box&itscg=30200';
@@ -407,6 +410,7 @@ function changeThemeOnButtonPress() {
             backgroundVideoSource.src = 'assets/mainbg-album3.mp4';
             albumYearWrapper.className = 'album3-styling';
             albumYear.innerText = '2000';
+            bgOverlay.className = 'album3-styling';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/the-marshall-mathers-lp/1440866782?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://embed.music.apple.com/us/album/the-marshall-mathers-lp/1440866782?app=music&amp;itsct=music_box&amp;itscg=30200';
@@ -431,6 +435,7 @@ function changeThemeOnButtonPress() {
             backgroundVideoSource.src = 'assets/mainbg-album4.mp4';
             albumYearWrapper.className = 'album4-styling';
             albumYear.innerText = '2002';
+            bgOverlay.className = 'album4-styling';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/the-eminem-show/1440903530?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/the-eminem-show/1440903530?itsct=music_box&itscg=30200';
@@ -455,6 +460,7 @@ function changeThemeOnButtonPress() {
             backgroundVideoSource.src = 'assets/mainbg-album5.mp4';
             albumYear.innerText = '2004';
             albumYearWrapper.className = 'album5-styling';
+            bgOverlay.className = 'album5-styling';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/encore-deluxe-version/1452852431?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/encore-deluxe-version/1452852431?itsct=music_box&itscg=30200';
@@ -479,6 +485,7 @@ function changeThemeOnButtonPress() {
             backgroundVideoSource.src = 'assets/mainbg-album6.mp4';
             albumYear.innerText = '2009';
             albumYearWrapper.className = 'album6-styling';
+            bgOverlay.className = 'album6-styling';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/relapse-deluxe-version/1440558626?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/relapse-deluxe-version/1440558626?itsct=music_box&itscg=30200';
@@ -503,6 +510,7 @@ function changeThemeOnButtonPress() {
             backgroundVideoSource.src = 'assets/mainbg-album7.mp4';
             albumYear.innerText = '2010';
             albumYearWrapper.className = 'album7-styling';
+            bgOverlay.className = 'album7-styling';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/recovery-deluxe-edition/1446625834?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/recovery-deluxe-edition/1446625834?itsct=music_box&itscg=30200';
@@ -527,6 +535,7 @@ function changeThemeOnButtonPress() {
             backgroundVideoSource.src = 'assets/mainbg-album8.mp4';
             albumYear.innerText = '2013';
             albumYearWrapper.className = 'album8-styling';
+            bgOverlay.className = 'album8-styling';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/the-marshall-mathers-lp2-deluxe/1440862963?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/the-marshall-mathers-lp2-deluxe/1440862963?itsct=music_box&itscg=30200';
@@ -551,6 +560,7 @@ function changeThemeOnButtonPress() {
             backgroundVideoSource.src = 'assets/mainbg-album9.mp4';
             albumYear.innerText = '2017';
             albumYearWrapper.className = 'album9-styling';
+            bgOverlay.className = 'album9-styling';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/revival/1440901083?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/revival/1440901083?itsct=music_box&itscg=30200';
@@ -575,6 +585,7 @@ function changeThemeOnButtonPress() {
             backgroundVideoSource.src = 'assets/mainbg-album10.mp4';
             albumYear.innerText = '2018';
             albumYearWrapper.className = 'album10-styling';
+            bgOverlay.className = 'album10-styling';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/kamikaze/1434770366?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/kamikaze/1434770366?itsct=music_box&itscg=30200';
