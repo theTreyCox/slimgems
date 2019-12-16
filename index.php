@@ -68,6 +68,7 @@
 </div>
 <div class="background-area">
   <div id="bg-color-overlay" class="album1-styling"></div>
+  <div id="graphic-area-1" class="album2-styling"></div>
   <video autoplay muted loop id="bg-video" class="album1-styling">
     <source src="assets/mainbg-album1.mp4" type="video/mp4"></source>
   </video>
