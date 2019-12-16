@@ -65,6 +65,11 @@
       </div>
     </div>
 </div>
+<div class="background-area">
+<video autoplay muted loop id="bg-video">
+  <source src="assets/mainbg-album1.mp4" type="video/mp4"></source>
+</video>
+</div>
 
 <script type="text/javascript" src="site.js"></script>
   </body>

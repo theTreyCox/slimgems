@@ -373,7 +373,7 @@ a {
 
 .page-container {
 	display: block;
-	background-color: black;
+	background-color: transparent;
 	height: 100vh;
 	background-image: url('../assets/backdrop-album1.png');
 	background-repeat: no-repeat;
