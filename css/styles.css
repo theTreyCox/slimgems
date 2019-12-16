@@ -381,6 +381,23 @@ a {
 	background-position: bottom;
 }
 
+#bg-video {
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 1920px;
+	z-index: -1;
+	mix-blend-mode: hard-light;
+	object-fit: cover;
+	object-position: center;
+}
+
+#bg-video.album1 {
+	mix-blend-mode: hard-light;
+}
+
 
 /**************** RESIZER **************/
 
