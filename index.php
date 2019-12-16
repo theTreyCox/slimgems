@@ -66,7 +66,7 @@
     </div>
 </div>
 <div class="background-area">
-<video autoplay muted loop id="bg-video" class="album1">
+<video autoplay muted loop id="bg-video" class="album1-styling">
   <source src="assets/mainbg-album1.mp4" type="video/mp4"></source>
 </video>
 </div>
