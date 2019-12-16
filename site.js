@@ -346,7 +346,7 @@ function changeThemeOnButtonPress() {
         btn.onclick = () => {
             backgroundVideo.className = 'album1-styling';
             pageContainer.className = 'page-container album1-styling'
-            backgroundVideoSource.src = 'assets/mainbg-album1.mp4';
+            backgroundVideoSource.src = '../assets/mainbg-album1.mp4';
             albumYear.innerText = '1996';
             albumYearWrapper.className = 'album1-styling';
             if (playlistlock == false) {
@@ -370,7 +370,7 @@ function changeThemeOnButtonPress() {
         btn.onclick = () => {
             backgroundVideo.className = 'album2-styling';
             pageContainer.className = 'page-container album2-styling'
-            backgroundVideoSource.src = 'assets/mainbg-album2.mp4';
+            backgroundVideoSource.src = '../assets/mainbg-album2.mp4';
             albumYearWrapper.className = 'album2-styling';
             albumYear.innerText = '1999';
             if (playlistlock == false) {
