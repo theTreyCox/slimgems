@@ -466,4 +466,61 @@ function changeThemeOnButtonPress() {
             }
         }
     })
+
+    // btn 8
+    albumBtn8 = document.querySelectorAll('.album-btn-8');
+    albumBtn8.forEach(function(btn) {
+        btn.onclick = () => {
+            if (playlistlock == false) {
+                appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/the-marshall-mathers-lp2-deluxe/1440862963?app=music&amp;itsct=music_box&amp;itscg=30200';
+                appleMusicLink.href = 'https://geo.music.apple.com/us/album/the-marshall-mathers-lp2-deluxe/1440862963?itsct=music_box&itscg=30200';
+                appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-8';
+                appleMusicLink.className = 'apple-music-listen-link album-color-8'
+                appleMusiciFrame.classList.remove('fadeInRight')
+                appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
+                setTimeout(function() {
+                    appleMusiciFrame.classList.remove('fadeOutRight');
+                    appleMusiciFrame.classList.add('fadeInRight')
+                }, 600)
+            }
+        }
+    })
+
+    // btn 9
+    albumBtn9 = document.querySelectorAll('.album-btn-9');
+    albumBtn9.forEach(function(btn) {
+        btn.onclick = () => {
+            if (playlistlock == false) {
+                appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/revival/1440901083?app=music&amp;itsct=music_box&amp;itscg=30200';
+                appleMusicLink.href = 'https://geo.music.apple.com/us/album/revival/1440901083?itsct=music_box&itscg=30200';
+                appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-9';
+                appleMusicLink.className = 'apple-music-listen-link album-color-9'
+                appleMusiciFrame.classList.remove('fadeInRight')
+                appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
+                setTimeout(function() {
+                    appleMusiciFrame.classList.remove('fadeOutRight');
+                    appleMusiciFrame.classList.add('fadeInRight')
+                }, 600)
+            }
+        }
+    })
+
+    // btn 10
+    albumBtn10 = document.querySelectorAll('.album-btn-10');
+    albumBtn10.forEach(function(btn) {
+        btn.onclick = () => {
+            if (playlistlock == false) {
+                appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/kamikaze/1434770366?app=music&amp;itsct=music_box&amp;itscg=30200';
+                appleMusicLink.href = 'https://geo.music.apple.com/us/album/kamikaze/1434770366?itsct=music_box&itscg=30200';
+                appleMusicEmbedWrapper.className = 'album-apple-music-embed album-embed album-color-10';
+                appleMusicLink.className = 'apple-music-listen-link album-color-10'
+                appleMusiciFrame.classList.remove('fadeInRight')
+                appleMusiciFrame.classList.add('animated', 'fadeOutRight', 'faster');
+                setTimeout(function() {
+                    appleMusiciFrame.classList.remove('fadeOutRight');
+                    appleMusiciFrame.classList.add('fadeInRight')
+                }, 600)
+            }
+        }
+    })
 }
