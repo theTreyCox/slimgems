@@ -34,7 +34,6 @@ a {
 
 .page-container {
     display: block;
-    background: black;
     height: 100vh;
 }
 
@@ -216,7 +215,7 @@ a {
     transform-origin: bottom;
     cursor: pointer;
     position: fixed;
-    bottom: 175px;
+    bottom: 187px;
     left: -15px;
 }
 
@@ -370,6 +369,16 @@ a {
 
 .album {
     cursor: alias;
+}
+
+.page-container {
+	display: block;
+	background-color: black;
+	height: 100vh;
+	background-image: url('../assets/backdrop-album1.png');
+	background-repeat: no-repeat;
+	background-size: 1920px;
+	background-position: bottom;
 }
 
 
