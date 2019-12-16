@@ -455,11 +455,10 @@ a {
 }
 
 .albums-container {
-    background-image: url('https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif');
+    background-image: url('../assets/puff.svg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-blend-mode: multiply;
 }
 
 
