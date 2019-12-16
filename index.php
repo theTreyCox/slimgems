@@ -67,9 +67,10 @@
     </div>
 </div>
 <div class="background-area">
-<video autoplay muted loop id="bg-video" class="album1-styling">
-  <source src="assets/mainbg-album1.mp4" type="video/mp4"></source>
-</video>
+  <div id="bg-color-overlay" class="album1-styling"></div>
+  <video autoplay muted loop id="bg-video" class="album1-styling">
+    <source src="assets/mainbg-album1.mp4" type="video/mp4"></source>
+  </video>
 </div>
 
 <script type="text/javascript" src="site.js"></script>
