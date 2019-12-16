@@ -402,6 +402,19 @@ a {
 	mix-blend-mode: hard-light;
 }
 
+#album-year {
+	position: fixed;
+	top: 0;
+	left: 310px;
+	font-size: 5em;
+}
+
+#album-year.album1-styling {
+	font-family: serif;
+	letter-spacing: 10px;
+	font-weight: bold;
+}
+
 
 /**************** RESIZER **************/
 
