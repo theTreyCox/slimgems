@@ -333,11 +333,18 @@ function changeThemeOnButtonPress() {
     const appleMusicEmbedWrapper = document.querySelector('.album-apple-music-embed');
     const appleMusiciFrame = document.querySelector('.apple-music-iframe');
     const appleMusicLink = document.querySelector('.apple-music-listen-link');
+    const backgroundVideo = document.getElementById('bg-video');
+    const backgroundVideoSource = document.querySelector('#bg-video > source');
+    const pageContainer = document.querySelector('.page-container');
 
     // btn 1
     albumBtn1 = document.querySelectorAll('.album-btn-1');
+    
     albumBtn1.forEach(function(btn) {
         btn.onclick = () => {
+            backgroundVideo.className = 'album1-styling';
+            pageContainer.className = 'page-container album1-styling'
+            backgroundVideoSource.src = 'assets/mainbg-album1.mp4';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/infinite-single/1176507476?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/infinite-single/1176507476?itsct=music_box&itscg=30200';
@@ -357,6 +364,9 @@ function changeThemeOnButtonPress() {
     albumBtn2 = document.querySelectorAll('.album-btn-2');
     albumBtn2.forEach(function(btn) {
         btn.onclick = () => {
+            backgroundVideo.className = 'album2-styling';
+            pageContainer.className = 'page-container album2-styling'
+            backgroundVideoSource.src = 'assets/mainbg-album2.mp4';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/the-slim-shady-lp/1440871441?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/the-slim-shady-lp/1440871441?itsct=music_box&itscg=30200';
@@ -376,6 +386,9 @@ function changeThemeOnButtonPress() {
     albumBtn3 = document.querySelectorAll('.album-btn-3');
     albumBtn3.forEach(function(btn) {
         btn.onclick = () => {
+            backgroundVideo.className = 'album3-styling';
+            pageContainer.className = 'page-container album3-styling'
+            backgroundVideoSource.src = 'assets/mainbg-album3.mp4';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/the-marshall-mathers-lp/1440866782?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://embed.music.apple.com/us/album/the-marshall-mathers-lp/1440866782?app=music&amp;itsct=music_box&amp;itscg=30200';
@@ -395,6 +408,9 @@ function changeThemeOnButtonPress() {
     albumBtn4 = document.querySelectorAll('.album-btn-4');
     albumBtn4.forEach(function(btn) {
         btn.onclick = () => {
+            backgroundVideo.className = 'album4-styling';
+            pageContainer.className = 'page-container album4-styling'
+            backgroundVideoSource.src = 'assets/mainbg-album4.mp4';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/the-eminem-show/1440903530?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/the-eminem-show/1440903530?itsct=music_box&itscg=30200';
@@ -414,6 +430,9 @@ function changeThemeOnButtonPress() {
     albumBtn5 = document.querySelectorAll('.album-btn-5');
     albumBtn5.forEach(function(btn) {
         btn.onclick = () => {
+            backgroundVideo.className = 'album5-styling';
+            pageContainer.className = 'page-container album5-styling'
+            backgroundVideoSource.src = 'assets/mainbg-album5.mp4';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/encore-deluxe-version/1452852431?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/encore-deluxe-version/1452852431?itsct=music_box&itscg=30200';
@@ -433,6 +452,9 @@ function changeThemeOnButtonPress() {
     albumBtn6 = document.querySelectorAll('.album-btn-6');
     albumBtn6.forEach(function(btn) {
         btn.onclick = () => {
+            backgroundVideo.className = 'album6-styling';
+            pageContainer.className = 'page-container album6-styling'
+            backgroundVideoSource.src = 'assets/mainbg-album6.mp4';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/relapse-deluxe-version/1440558626?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/relapse-deluxe-version/1440558626?itsct=music_box&itscg=30200';
@@ -452,6 +474,9 @@ function changeThemeOnButtonPress() {
     albumBtn7 = document.querySelectorAll('.album-btn-7');
     albumBtn7.forEach(function(btn) {
         btn.onclick = () => {
+            backgroundVideo.className = 'album7-styling';
+            pageContainer.className = 'page-container album7-styling'
+            backgroundVideoSource.src = 'assets/mainbg-album7.mp4';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/recovery-deluxe-edition/1446625834?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/recovery-deluxe-edition/1446625834?itsct=music_box&itscg=30200';
@@ -471,6 +496,9 @@ function changeThemeOnButtonPress() {
     albumBtn8 = document.querySelectorAll('.album-btn-8');
     albumBtn8.forEach(function(btn) {
         btn.onclick = () => {
+            backgroundVideo.className = 'album8-styling';
+            pageContainer.className = 'page-container album8-styling'
+            backgroundVideoSource.src = 'assets/mainbg-album8.mp4';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/the-marshall-mathers-lp2-deluxe/1440862963?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/the-marshall-mathers-lp2-deluxe/1440862963?itsct=music_box&itscg=30200';
@@ -489,6 +517,9 @@ function changeThemeOnButtonPress() {
     // btn 9
     albumBtn9 = document.querySelectorAll('.album-btn-9');
     albumBtn9.forEach(function(btn) {
+        backgroundVideo.className = 'album9-styling';
+        pageContainer.className = 'page-container album9-styling'
+        backgroundVideoSource.src = 'assets/mainbg-album9.mp4';
         btn.onclick = () => {
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/revival/1440901083?app=music&amp;itsct=music_box&amp;itscg=30200';
@@ -509,6 +540,9 @@ function changeThemeOnButtonPress() {
     albumBtn10 = document.querySelectorAll('.album-btn-10');
     albumBtn10.forEach(function(btn) {
         btn.onclick = () => {
+            backgroundVideo.className = 'album10-styling';
+            pageContainer.className = 'page-container album10-styling'
+            backgroundVideoSource.src = 'assets/mainbg-album10.mp4';
             if (playlistlock == false) {
                 appleMusiciFrame.src = 'https://embed.music.apple.com/us/album/kamikaze/1434770366?app=music&amp;itsct=music_box&amp;itscg=30200';
                 appleMusicLink.href = 'https://geo.music.apple.com/us/album/kamikaze/1434770366?itsct=music_box&itscg=30200';

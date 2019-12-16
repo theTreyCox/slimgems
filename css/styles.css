@@ -375,10 +375,14 @@ a {
 	display: block;
 	background-color: transparent;
 	height: 100vh;
-	background-image: url('../assets/backdrop-album1.png');
+	background-image: none;
 	background-repeat: no-repeat;
 	background-size: 1920px;
 	background-position: bottom;
+}
+
+.page-container.album1-styling {
+	background-image: url('../assets/backdrop-album1.png');
 }
 
 #bg-video {

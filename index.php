@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<div class="page-container">
+<div class="page-container album1-styling">
   <div class="logo"><img src="assets/logo.svg" alt="Slim Gemz logo"></div>
   <div class="background-shelf">
     <div class="em-news"></div>
