@@ -461,6 +461,10 @@ a {
     background-repeat: no-repeat;
 }
 
+.albums-container {
+    opacity: 0;
+}
+
 
 /**************** RESIZER **************/
 

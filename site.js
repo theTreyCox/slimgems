@@ -159,7 +159,7 @@ function flipImageToBack(element, num) {
     element.style.transition = 'all 0.3s ease-in-out';
     setTimeout(function() {
         element.style.backgroundImage = `url('assets/back-album${num}.png')`;
-    }, 125);   
+    }, 125);
 }
 
 function flipImageToFront(element, num) {
@@ -249,9 +249,9 @@ function makeResizableDiv(div) {
             } else if (currentResizer.classList.contains('bottom-left')) {
                 const height = original_height + (e.pageY - original_mouse_y)
                 const width = original_width - (e.pageX - original_mouse_x)
-                // if (height > minimum_size) {
-                //     element.style.height = height + 'px'
-                // }
+                    // if (height > minimum_size) {
+                    //     element.style.height = height + 'px'
+                    // }
                 if (width > minimum_size) {
                     element.style.width = width + 'px'
                     element.style.left = original_x + (e.pageX - original_mouse_x) + 'px'
@@ -341,7 +341,7 @@ function changeThemeOnButtonPress() {
 
     // btn 1
     albumBtn1 = document.querySelectorAll('.album-btn-1');
-    
+
     albumBtn1.forEach(function(btn) {
         btn.onclick = () => {
             backgroundVideo.className = 'album1-styling';
