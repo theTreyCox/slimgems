@@ -460,7 +460,9 @@ a {
 }
 
 #album-year.album2-styling {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', serif;
+    letter-spacing: 10px;
+    font-weight: bold;
 }
 
 .albums-container {
