@@ -459,6 +459,10 @@ a {
     font-weight: bold;
 }
 
+#album-year.album2-styling {
+    font-family: 'Indie Flower', cursive;
+}
+
 .albums-container {
     background-image: url('../assets/puff.svg');
     background-position: center;
@@ -486,17 +490,21 @@ a {
     mix-blend-mode: hue;
 }
 
+#graphic-area-1 {
+    display: block;
+    z-index: -1;
+    position: fixed;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 #graphic-area-1.album2-styling {
-	display: block;
 	height: 100px;
 	width: 72px;
-	position: fixed;
 	bottom: 320px;
 	left: 25%;
 	background-image: url('../assets/album2-graphic1.png');
-	background-color: transparent;
-	background-size: contain;
-	background-repeat: no-repeat;
 	transform: rotate(13deg) translateY(0);
     mix-blend-mode: luminosity;
     animation-name: album2Legs;
