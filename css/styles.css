@@ -455,6 +455,34 @@ a {
 	font-weight: bold;
 }
 
+#graphic-area-1.album2-styling {
+	display: block;
+	height: 100px;
+	width: 72px;
+	position: fixed;
+	bottom: 320px;
+	left: 25%;
+	background-image: url('assets/album2-graphic1.png');
+	background-color: transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transform: rotate(13deg);
+    mix-blend-mode: luminosity;
+    animation-name: album2Legs;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+}
+
+@keyframes album2Legs {
+    from {
+        transform: rotate(13deg);
+    }
+    to {
+        transform: rotate(-13deg);
+    }
+}
+
 
 /**************** RESIZER **************/
 
