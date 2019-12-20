@@ -493,11 +493,11 @@ a {
 	position: fixed;
 	bottom: 320px;
 	left: 25%;
-	background-image: url('assets/album2-graphic1.png');
+	background-image: url('../assets/album2-graphic1.png');
 	background-color: transparent;
 	background-size: contain;
 	background-repeat: no-repeat;
-	transform: rotate(13deg);
+	transform: rotate(13deg) translateY(0);
     mix-blend-mode: luminosity;
     animation-name: album2Legs;
     animation-iteration-count: infinite;
@@ -507,10 +507,10 @@ a {
 
 @keyframes album2Legs {
     from {
-        transform: rotate(13deg);
+        transform: rotate(13deg) translateY(0);
     }
     to {
-        transform: rotate(-13deg);
+        transform: rotate(-13deg) translateY(5);
     }
 }
 
