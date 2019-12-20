@@ -351,18 +351,18 @@ a {
 }
 
 .reset-sidebar-width {
-	background-image: none;
-	background-size: contain;
-	height: 25px;
-	width: 25px;
-	mask-image: url('../assets/reset.svg');
-	background-color: white;
-	background-repeat: no-repeat;
-	mask-repeat: no-repeat;
-	position: absolute;
-	mask-position: center;
-	left: 20px;
-	top: 50%;
+    background-image: none;
+    background-size: contain;
+    height: 25px;
+    width: 25px;
+    mask-image: url('../assets/reset.svg');
+    background-color: white;
+    background-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    position: absolute;
+    mask-position: center;
+    left: 20px;
+    top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
 }
@@ -372,87 +372,118 @@ a {
 }
 
 .page-container {
-	display: block;
-	background-color: transparent;
-	height: 100vh;
-	background-image: none;
-	background-repeat: no-repeat;
-	background-size: 1920px;
+    display: block;
+    background-color: transparent;
+    height: 100vh;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 1920px;
     background-position: bottom;
     transition: all 0.3s ease-in-out;
 }
 
 .page-container.album1-styling {
-	background-image: url('../assets/backdrop-album1.png');
+    background-image: url('../assets/backdrop-album1.png');
 }
 
 .page-container.album2-styling {
-	background-image: url('../assets/backdrop-album2.png');
+    background-image: url('../assets/backdrop-album2.png');
 }
 
 .page-container.album3-styling {
-	background-image: url('../assets/backdrop-album3.png');
+    background-image: url('../assets/backdrop-album3.png');
 }
 
 .page-container.album4-styling {
-	background-image: url('../assets/backdrop-album4.png');
+    background-image: url('../assets/backdrop-album4.png');
 }
 
 .page-container.album5-styling {
-	background-image: url('../assets/backdrop-album5.png');
+    background-image: url('../assets/backdrop-album5.png');
 }
 
 .page-container.album6-styling {
-	background-image: url('../assets/backdrop-album6.png');
+    background-image: url('../assets/backdrop-album6.png');
 }
 
 .page-container.album7-styling {
-	background-image: url('../assets/backdrop-album7.png');
+    background-image: url('../assets/backdrop-album7.png');
 }
 
 .page-container.album8-styling {
-	background-image: url('../assets/backdrop-album8.png');
+    background-image: url('../assets/backdrop-album8.png');
 }
 
 .page-container.album9-styling {
-	background-image: url('../assets/backdrop-album9.png');
+    background-image: url('../assets/backdrop-album9.png');
 }
 
 .page-container.album10-styling {
-	background-image: url('../assets/backdrop-album10.png');
+    background-image: url('../assets/backdrop-album10.png');
 }
 
-
 #bg-video {
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	width: 1920px;
-	z-index: -1;
-	mix-blend-mode: normal;
-	object-fit: cover;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 1920px;
+    z-index: -2;
+    mix-blend-mode: normal;
+    object-fit: cover;
     object-position: center;
     transition: all 0.3s ease-in-out;
+    filter: none;
 }
 
 #bg-video.album1-styling {
-	mix-blend-mode: hard-light;
+    mix-blend-mode: hard-light;
+}
+
+#bg-video.album2-styling {
+    filter: contrast(2);
 }
 
 #album-year {
-	position: fixed;
-	top: 0;
-	left: 310px;
+    position: fixed;
+    top: 0;
+    left: 310px;
     font-size: 5em;
     transition: all 0.3s ease-in-out;
 }
 
 #album-year.album1-styling {
-	font-family: serif;
-	letter-spacing: 10px;
-	font-weight: bold;
+    font-family: serif;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+.albums-container {
+    background-image: url('../assets/puff.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.albums-container {
+    opacity: 0;
+}
+
+#bg-color-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: transparent;
+    mix-blend-mode: normal;
+}
+
+#bg-color-overlay.album2-styling {
+    background: #2f246f;
+    mix-blend-mode: hue;
 }
 
 #graphic-area-1.album2-styling {
