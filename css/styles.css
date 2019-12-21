@@ -501,6 +501,15 @@ a {
     background-repeat: no-repeat;
 }
 
+#graphic-area-2 {
+    display: block;
+    z-index: -1;
+    position: fixed;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 #graphic-area-1.album2-styling {
 	height: 100px;
 	width: 72px;
@@ -513,6 +522,15 @@ a {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-duration: 1s;
+}
+
+#graphic-area-2.album2-styling {
+	height: 130px;
+	width: 50px;
+	background-image: url('../assets/album2-graphic2.png');
+	bottom: 80px;
+	left: 60%;
+    mix-blend-mode: luminosity;
 }
 
 @keyframes album2Legs {
